@@ -1,1137 +1,1137 @@
 {
-  "fn:parse-xml-fragment#1": {
-    "body": "parse-xml-fragment($0)",
-    "prefix": "parse-xml-fragment",
-    "description": "parse-xml-fragment($arg xs:string?)\n\nThis function takes as input an XML external entity represented as a string, and returns the document node at the root of an XDM tree representing the parsed document fragment."
-  },
-  "fn:for-each-pair#3": {
-    "body": "for-each-pair($0, $1, $2)",
-    "prefix": "for-each-pair",
-    "description": "for-each-pair($seq1 item()*, $seq2 item()*, $action function(item(), item()) as item()*)\n\nApplies the function item $action to successive pairs of items taken one from $seq1 and one from $seq2, returning the concatenation of the resulting sequences in order."
-  },
-  "fn:contains#2": {
-    "body": "contains($0, $1)",
-    "prefix": "contains",
-    "description": "contains($arg1 xs:string?, $arg2 xs:string?)\n\nReturns true if the string $arg1 contains $arg2 as a substring, taking collations into account."
-  },
-  "fn:head#1": {
-    "body": "head($0)",
-    "prefix": "head",
-    "description": "head($arg item()*)\n\nReturns the first item in a sequence."
-  },
-  "fn:xml-to-json#1": {
-    "body": "xml-to-json($0)",
-    "prefix": "xml-to-json",
-    "description": "xml-to-json($input node()?)\n\nConverts an XML tree, whose format corresponds to the XML representation of JSON defined in this specification, into a string conforming to the JSON grammar."
-  },
-  "fn:starts-with#3": {
-    "body": "starts-with($0, $1, $2)",
-    "prefix": "starts-with",
-    "description": "starts-with($arg1 xs:string?, $arg2 xs:string?, $collation xs:string)\n\nReturns true if the string $arg1 contains $arg2 as a leading substring, taking collations into account."
-  },
-  "fn:sort#3": {
-    "body": "sort($0, $1, $2)",
-    "prefix": "sort",
-    "description": "sort($input item()*, $collation xs:string?, $key function(item()) as xs:anyAtomicType*)\n\nSorts a supplied sequence, based on the value of a sort key supplied as a function."
-  },
-  "fn:month-from-date#1": {
-    "body": "month-from-date($0)",
-    "prefix": "month-from-date",
-    "description": "month-from-date($arg xs:date?)\n\nReturns the month component of an xs:date."
-  },
-  "fn:format-time#2": {
-    "body": "format-time($0, $1)",
-    "prefix": "format-time",
-    "description": "format-time($value xs:time?, $picture xs:string)\n\nReturns a string containing an xs:time value formatted for display."
-  },
-  "fn:max#1": {
-    "body": "max($0)",
-    "prefix": "max",
-    "description": "max($arg xs:anyAtomicType*)\n\nReturns a value that is equal to the highest value appearing in the input sequence."
-  },
-  "fn:current-time#0": {
-    "body": "current-time()",
-    "prefix": "current-time",
-    "description": "current-time()\n\nReturns the current time."
-  },
-  "fn:format-date#2": {
-    "body": "format-date($0, $1)",
-    "prefix": "format-date",
-    "description": "format-date($value xs:date?, $picture xs:string)\n\nReturns a string containing an xs:date value formatted for display."
-  },
-  "fn:current-date#0": {
-    "body": "current-date()",
-    "prefix": "current-date",
-    "description": "current-date()\n\nReturns the current date."
-  },
-  "fn:contains#3": {
-    "body": "contains($0, $1, $2)",
-    "prefix": "contains",
-    "description": "contains($arg1 xs:string?, $arg2 xs:string?, $collation xs:string)\n\nReturns true if the string $arg1 contains $arg2 as a substring, taking collations into account."
-  },
-  "fn:days-from-duration#1": {
-    "body": "days-from-duration($0)",
-    "prefix": "days-from-duration",
-    "description": "days-from-duration($arg xs:duration?)\n\nReturns the number of days in a duration."
-  },
-  "fn:xml-to-json#2": {
-    "body": "xml-to-json($0, $1)",
-    "prefix": "xml-to-json",
-    "description": "xml-to-json($input node()?, $options map(*))\n\nConverts an XML tree, whose format corresponds to the XML representation of JSON defined in this specification, into a string conforming to the JSON grammar."
-  },
-  "fn:exactly-one#1": {
-    "body": "exactly-one($0)",
-    "prefix": "exactly-one",
-    "description": "exactly-one($arg item()*)\n\nReturns $arg if it contains exactly one item. Otherwise, raises an error."
-  },
-  "fn:year-from-date#1": {
-    "body": "year-from-date($0)",
-    "prefix": "year-from-date",
-    "description": "year-from-date($arg xs:date?)\n\nReturns the year component of an xs:date."
-  },
-  "fn:normalize-space#0": {
-    "body": "normalize-space()",
-    "prefix": "normalize-space",
-    "description": "normalize-space()\n\nReturns the value of $arg with leading and trailing whitespace removed, and sequences of internal whitespace reduced to a single space character."
-  },
-  "fn:max#2": {
-    "body": "max($0, $1)",
-    "prefix": "max",
-    "description": "max($arg xs:anyAtomicType*, $collation xs:string)\n\nReturns a value that is equal to the highest value appearing in the input sequence."
-  },
-  "fn:trace#1": {
-    "body": "trace($0)",
-    "prefix": "trace",
-    "description": "trace($value item()*)\n\nProvides an execution trace intended to be used in debugging queries."
-  },
-  "fn:root#0": {
-    "body": "root()",
-    "prefix": "root",
-    "description": "root()\n\nReturns the root of the tree to which $arg belongs. This will usually, but not necessarily, be a document node."
-  },
-  "fn:string-join#1": {
-    "body": "string-join($0)",
-    "prefix": "string-join",
-    "description": "string-join($arg1 xs:anyAtomicType*)\n\nReturns a string created by concatenating the items in a sequence, with a defined separator between adjacent items."
-  },
-  "fn:parse-json#1": {
-    "body": "parse-json($0)",
-    "prefix": "parse-json",
-    "description": "parse-json($json-text xs:string?)\n\nParses a string supplied in the form of a JSON text, returning the results typically in the form of a map or array."
-  },
-  "fn:load-xquery-module#1": {
-    "body": "load-xquery-module($0)",
-    "prefix": "load-xquery-module",
-    "description": "load-xquery-module($module-uri xs:string)\n\nProvides access to the public functions and global variables of a dynamically-loaded XQuery library module."
-  },
-  "fn:normalize-space#1": {
-    "body": "normalize-space($0)",
-    "prefix": "normalize-space",
-    "description": "normalize-space($arg xs:string?)\n\nReturns the value of $arg with leading and trailing whitespace removed, and sequences of internal whitespace reduced to a single space character."
-  },
-  "fn:trace#2": {
-    "body": "trace($0, $1)",
-    "prefix": "trace",
-    "description": "trace($value item()*, $label xs:string)\n\nProvides an execution trace intended to be used in debugging queries."
-  },
-  "fn:root#1": {
-    "body": "root($0)",
-    "prefix": "root",
-    "description": "root($arg node()?)\n\nReturns the root of the tree to which $arg belongs. This will usually, but not necessarily, be a document node."
-  },
-  "fn:compare#2": {
-    "body": "compare($0, $1)",
-    "prefix": "compare",
-    "description": "compare($comparand1 xs:string?, $comparand2 xs:string?)\n\nReturns -1, 0, or 1, depending on whether $comparand1 collates before, equal to, or after $comparand2 according to the rules of a selected collation."
-  },
-  "fn:default-language#0": {
-    "body": "default-language()",
-    "prefix": "default-language",
-    "description": "default-language()\n\nReturns the value of the default language property from the dynamic context."
-  },
-  "fn:string-join#2": {
-    "body": "string-join($0, $1)",
-    "prefix": "string-join",
-    "description": "string-join($arg1 xs:anyAtomicType*, $arg2 xs:string)\n\nReturns a string created by concatenating the items in a sequence, with a defined separator between adjacent items."
-  },
-  "fn:parse-json#2": {
-    "body": "parse-json($0, $1)",
-    "prefix": "parse-json",
-    "description": "parse-json($json-text xs:string?, $options map(*))\n\nParses a string supplied in the form of a JSON text, returning the results typically in the form of a map or array."
-  },
-  "fn:load-xquery-module#2": {
-    "body": "load-xquery-module($0, $1)",
-    "prefix": "load-xquery-module",
-    "description": "load-xquery-module($module-uri xs:string, $options map(*))\n\nProvides access to the public functions and global variables of a dynamically-loaded XQuery library module."
-  },
-  "fn:format-time#5": {
-    "body": "format-time($0, $1, $2, $3, $4)",
-    "prefix": "format-time",
-    "description": "format-time($value xs:time?, $picture xs:string, $language xs:string?, $calendar xs:string?, $place xs:string?)\n\nReturns a string containing an xs:time value formatted for display."
-  },
-  "fn:error#0": {
-    "body": "error()",
-    "prefix": "error",
-    "description": "error()\n\nCalling the fn:error function raises an application-defined error."
-  },
-  "fn:compare#3": {
-    "body": "compare($0, $1, $2)",
-    "prefix": "compare",
-    "description": "compare($comparand1 xs:string?, $comparand2 xs:string?, $collation xs:string)\n\nReturns -1, 0, or 1, depending on whether $comparand1 collates before, equal to, or after $comparand2 according to the rules of a selected collation."
-  },
-  "fn:format-date#5": {
-    "body": "format-date($0, $1, $2, $3, $4)",
-    "prefix": "format-date",
-    "description": "format-date($value xs:date?, $picture xs:string, $language xs:string?, $calendar xs:string?, $place xs:string?)\n\nReturns a string containing an xs:date value formatted for display."
-  },
-  "fn:path#0": {
-    "body": "path()",
-    "prefix": "path",
-    "description": "path()\n\nReturns a path expression that can be used to select the supplied node relative to the root of its containing document."
-  },
-  "fn:boolean#1": {
-    "body": "boolean($0)",
-    "prefix": "boolean",
-    "description": "boolean($arg item()*)\n\nComputes the effective boolean value of the sequence $arg."
-  },
-  "fn:error#1": {
-    "body": "error($0)",
-    "prefix": "error",
-    "description": "error($code xs:QName?)\n\nCalling the fn:error function raises an application-defined error."
-  },
-  "fn:adjust-time-to-timezone#1": {
-    "body": "adjust-time-to-timezone($0)",
-    "prefix": "adjust-time-to-timezone",
-    "description": "adjust-time-to-timezone($arg xs:time?)\n\nAdjusts an xs:time value to a specific timezone, or to no timezone at all."
-  },
-  "fn:minutes-from-duration#1": {
-    "body": "minutes-from-duration($0)",
-    "prefix": "minutes-from-duration",
-    "description": "minutes-from-duration($arg xs:duration?)\n\nReturns the number of minutes in a duration."
-  },
-  "fn:path#1": {
-    "body": "path($0)",
-    "prefix": "path",
-    "description": "path($arg node()?)\n\nReturns a path expression that can be used to select the supplied node relative to the root of its containing document."
-  },
-  "fn:remove#2": {
-    "body": "remove($0, $1)",
-    "prefix": "remove",
-    "description": "remove($target item()*, $position xs:integer)\n\nReturns a new sequence containing all the items of $target except the item at position $position."
-  },
-  "fn:seconds-from-duration#1": {
-    "body": "seconds-from-duration($0)",
-    "prefix": "seconds-from-duration",
-    "description": "seconds-from-duration($arg xs:duration?)\n\nReturns the number of seconds in a duration."
-  },
-  "fn:error#2": {
-    "body": "error($0, $1)",
-    "prefix": "error",
-    "description": "error($code xs:QName?, $description xs:string)\n\nCalling the fn:error function raises an application-defined error."
-  },
-  "fn:adjust-time-to-timezone#2": {
-    "body": "adjust-time-to-timezone($0, $1)",
-    "prefix": "adjust-time-to-timezone",
-    "description": "adjust-time-to-timezone($arg xs:time?, $timezone xs:dayTimeDuration?)\n\nAdjusts an xs:time value to a specific timezone, or to no timezone at all."
-  },
-  "fn:string-to-codepoints#1": {
-    "body": "string-to-codepoints($0)",
-    "prefix": "string-to-codepoints",
-    "description": "string-to-codepoints($arg xs:string?)\n\nReturns the sequence of codepoints that constitute an xs:string value."
-  },
-  "fn:json-to-xml#1": {
-    "body": "json-to-xml($0)",
-    "prefix": "json-to-xml",
-    "description": "json-to-xml($json-text xs:string?)\n\nParses a string supplied in the form of a JSON text, returning the results in the form of an XML document node."
-  },
-  "fn:codepoints-to-string#1": {
-    "body": "codepoints-to-string($0)",
-    "prefix": "codepoints-to-string",
-    "description": "codepoints-to-string($arg xs:integer*)\n\nReturns an xs:string whose characters have supplied codepoints."
-  },
-  "fn:for-each#2": {
-    "body": "for-each($0, $1)",
-    "prefix": "for-each",
-    "description": "for-each($seq item()*, $action function(item()) as item()*)\n\nApplies the function item $action to every item from the sequence $seq in turn, returning the concatenation of the resulting sequences in order."
-  },
-  "fn:adjust-date-to-timezone#1": {
-    "body": "adjust-date-to-timezone($0)",
-    "prefix": "adjust-date-to-timezone",
-    "description": "adjust-date-to-timezone($arg xs:date?)\n\nAdjusts an xs:date value to a specific timezone, or to no timezone at all; the result is the date in the target timezone that contains the starting instant of the supplied date."
-  },
-  "fn:error#3": {
-    "body": "error($0, $1, $2)",
-    "prefix": "error",
-    "description": "error($code xs:QName?, $description xs:string, $error-object item()*)\n\nCalling the fn:error function raises an application-defined error."
-  },
-  "fn:codepoint-equal#2": {
-    "body": "codepoint-equal($0, $1)",
-    "prefix": "codepoint-equal",
-    "description": "codepoint-equal($comparand1 xs:string?, $comparand2 xs:string?)\n\nReturns true if two strings are equal, considered codepoint-by-codepoint."
-  },
-  "fn:resolve-uri#1": {
-    "body": "resolve-uri($0)",
-    "prefix": "resolve-uri",
-    "description": "resolve-uri($relative xs:string?)\n\nResolves a relative IRI reference against an absolute IRI."
-  },
-  "fn:json-to-xml#2": {
-    "body": "json-to-xml($0, $1)",
-    "prefix": "json-to-xml",
-    "description": "json-to-xml($json-text xs:string?, $options map(*))\n\nParses a string supplied in the form of a JSON text, returning the results in the form of an XML document node."
-  },
-  "fn:iri-to-uri#1": {
-    "body": "iri-to-uri($0)",
-    "prefix": "iri-to-uri",
-    "description": "iri-to-uri($iri xs:string?)\n\nConverts a string containing an IRI into a URI according to the rules of ."
-  },
-  "fn:sum#1": {
-    "body": "sum($0)",
-    "prefix": "sum",
-    "description": "sum($arg xs:anyAtomicType*)\n\nReturns a value obtained by adding together the values in $arg."
-  },
-  "fn:adjust-date-to-timezone#2": {
-    "body": "adjust-date-to-timezone($0, $1)",
-    "prefix": "adjust-date-to-timezone",
-    "description": "adjust-date-to-timezone($arg xs:date?, $timezone xs:dayTimeDuration?)\n\nAdjusts an xs:date value to a specific timezone, or to no timezone at all; the result is the date in the target timezone that contains the starting instant of the supplied date."
-  },
-  "fn:resolve-uri#2": {
-    "body": "resolve-uri($0, $1)",
-    "prefix": "resolve-uri",
-    "description": "resolve-uri($relative xs:string?, $base xs:string)\n\nResolves a relative IRI reference against an absolute IRI."
-  },
-  "fn:floor#1": {
-    "body": "floor($0)",
-    "prefix": "floor",
-    "description": "floor($arg xs:numeric?)\n\nRounds $arg downwards to a whole number."
-  },
-  "fn:transform#1": {
-    "body": "transform($0)",
-    "prefix": "transform",
-    "description": "transform($options map(*))\n\nInvokes a transformation using a dynamically-loaded XSLT stylesheet."
-  },
-  "fn:position#0": {
-    "body": "position()",
-    "prefix": "position",
-    "description": "position()\n\nReturns the context position from the dynamic context."
-  },
-  "fn:sum#2": {
-    "body": "sum($0, $1)",
-    "prefix": "sum",
-    "description": "sum($arg xs:anyAtomicType*, $zero xs:anyAtomicType?)\n\nReturns a value obtained by adding together the values in $arg."
-  },
-  "fn:function-arity#1": {
-    "body": "function-arity($0)",
-    "prefix": "function-arity",
-    "description": "function-arity($func function(*))\n\nReturns the arity of the function identified by a function item."
-  },
-  "fn:unparsed-text-available#1": {
-    "body": "unparsed-text-available($0)",
-    "prefix": "unparsed-text-available",
-    "description": "unparsed-text-available($href xs:string?)\n\nBecause errors in evaluating the fn:unparsed-text function are non-recoverable, these two functions are provided to allow an application to determine whether a call with particular arguments would succeed."
-  },
-  "fn:number#0": {
-    "body": "number()",
-    "prefix": "number",
-    "description": "number()\n\nReturns the value indicated by $arg or, if $arg is not specified, the context item after atomization, converted to an xs:double."
-  },
-  "fn:format-integer#2": {
-    "body": "format-integer($0, $1)",
-    "prefix": "format-integer",
-    "description": "format-integer($value xs:integer?, $picture xs:string)\n\nFormats an integer according to a given picture string, using the conventions of a given natural language if specified."
-  },
-  "fn:data#0": {
-    "body": "data()",
-    "prefix": "data",
-    "description": "data()\n\nReturns the result of atomizing a sequence. This process flattens arrays, and replaces nodes by their typed values."
-  },
-  "fn:day-from-dateTime#1": {
-    "body": "day-from-dateTime($0)",
-    "prefix": "day-from-dateTime",
-    "description": "day-from-dateTime($arg xs:dateTime?)\n\nReturns the day component of an xs:dateTime."
-  },
-  "fn:empty#1": {
-    "body": "empty($0)",
-    "prefix": "empty",
-    "description": "empty($arg item()*)\n\nReturns true if the argument is the empty sequence."
-  },
-  "fn:unparsed-text-available#2": {
-    "body": "unparsed-text-available($0, $1)",
-    "prefix": "unparsed-text-available",
-    "description": "unparsed-text-available($href xs:string?, $encoding xs:string)\n\nBecause errors in evaluating the fn:unparsed-text function are non-recoverable, these two functions are provided to allow an application to determine whether a call with particular arguments would succeed."
-  },
-  "fn:number#1": {
-    "body": "number($0)",
-    "prefix": "number",
-    "description": "number($arg xs:anyAtomicType?)\n\nReturns the value indicated by $arg or, if $arg is not specified, the context item after atomization, converted to an xs:double."
-  },
-  "fn:format-integer#3": {
-    "body": "format-integer($0, $1, $2)",
-    "prefix": "format-integer",
-    "description": "format-integer($value xs:integer?, $picture xs:string, $lang xs:string?)\n\nFormats an integer according to a given picture string, using the conventions of a given natural language if specified."
-  },
-  "fn:data#1": {
-    "body": "data($0)",
-    "prefix": "data",
-    "description": "data($arg item()*)\n\nReturns the result of atomizing a sequence. This process flattens arrays, and replaces nodes by their typed values."
-  },
-  "fn:round#1": {
-    "body": "round($0)",
-    "prefix": "round",
-    "description": "round($arg xs:numeric?)\n\nRounds a value to a specified number of decimal places, rounding upwards if two such values are equally near."
-  },
-  "fn:namespace-uri-for-prefix#2": {
-    "body": "namespace-uri-for-prefix($0, $1)",
-    "prefix": "namespace-uri-for-prefix",
-    "description": "namespace-uri-for-prefix($prefix xs:string?, $element element())\n\nReturns the namespace URI of one of the in-scope namespaces for $element, identified by its namespace prefix."
-  },
-  "fn:name#0": {
-    "body": "name()",
-    "prefix": "name",
-    "description": "name()\n\nReturns the name of a node, as an xs:string that is either the zero-length string, or has the lexical form of an xs:QName."
-  },
-  "fn:static-base-uri#0": {
-    "body": "static-base-uri()",
-    "prefix": "static-base-uri",
-    "description": "static-base-uri()\n\nThis function returns the value of the static base URI property from the static context."
-  },
-  "fn:timezone-from-dateTime#1": {
-    "body": "timezone-from-dateTime($0)",
-    "prefix": "timezone-from-dateTime",
-    "description": "timezone-from-dateTime($arg xs:dateTime?)\n\nReturns the timezone component of an xs:dateTime."
-  },
-  "fn:count#1": {
-    "body": "count($0)",
-    "prefix": "count",
-    "description": "count($arg item()*)\n\nReturns the number of items in a sequence."
-  },
-  "fn:round#2": {
-    "body": "round($0, $1)",
-    "prefix": "round",
-    "description": "round($arg xs:numeric?, $precision xs:integer)\n\nRounds a value to a specified number of decimal places, rounding upwards if two such values are equally near."
-  },
-  "fn:name#1": {
-    "body": "name($0)",
-    "prefix": "name",
-    "description": "name($arg node()?)\n\nReturns the name of a node, as an xs:string that is either the zero-length string, or has the lexical form of an xs:QName."
-  },
-  "fn:apply#2": {
-    "body": "apply($0, $1)",
-    "prefix": "apply",
-    "description": "apply($function function(*), $array array(*))\n\nMakes a dynamic call on a function with an argument list supplied in the form of an array."
-  },
-  "fn:minutes-from-dateTime#1": {
-    "body": "minutes-from-dateTime($0)",
-    "prefix": "minutes-from-dateTime",
-    "description": "minutes-from-dateTime($arg xs:dateTime?)\n\nReturns the minute component of an xs:dateTime."
-  },
-  "fn:local-name#0": {
-    "body": "local-name()",
-    "prefix": "local-name",
-    "description": "local-name()\n\nReturns the local part of the name of $arg as an xs:string that is either the zero-length string, or has the lexical form of an xs:NCName."
-  },
-  "fn:translate#3": {
-    "body": "translate($0, $1, $2)",
-    "prefix": "translate",
-    "description": "translate($arg xs:string?, $mapString xs:string, $transString xs:string)\n\nReturns the value of $arg modified by replacing or removing individual characters."
-  },
-  "fn:unparsed-text#1": {
-    "body": "unparsed-text($0)",
-    "prefix": "unparsed-text",
-    "description": "unparsed-text($href xs:string?)\n\nThe fn:unparsed-text function reads an external resource (for example, a file) and returns a string representation of the resource."
-  },
-  "fn:contains-token#2": {
-    "body": "contains-token($0, $1)",
-    "prefix": "contains-token",
-    "description": "contains-token($input xs:string*, $token xs:string)\n\nDetermines whether or not any of the supplied strings, when tokenized at whitespace boundaries, contains the supplied token, under the rules of the supplied collation."
-  },
-  "fn:seconds-from-dateTime#1": {
-    "body": "seconds-from-dateTime($0)",
-    "prefix": "seconds-from-dateTime",
-    "description": "seconds-from-dateTime($arg xs:dateTime?)\n\nReturns the seconds component of an xs:dateTime."
-  },
-  "fn:function-lookup#2": {
-    "body": "function-lookup($0, $1)",
-    "prefix": "function-lookup",
-    "description": "function-lookup($name xs:QName, $arity xs:integer)\n\nReturns the function having a given name and arity, if there is one."
-  },
-  "fn:namespace-uri-from-QName#1": {
-    "body": "namespace-uri-from-QName($0)",
-    "prefix": "namespace-uri-from-QName",
-    "description": "namespace-uri-from-QName($arg xs:QName?)\n\nReturns the namespace URI part of the supplied QName."
-  },
-  "fn:month-from-dateTime#1": {
-    "body": "month-from-dateTime($0)",
-    "prefix": "month-from-dateTime",
-    "description": "month-from-dateTime($arg xs:dateTime?)\n\nReturns the month component of an xs:dateTime."
-  },
-  "fn:true#0": {
-    "body": "true()",
-    "prefix": "true",
-    "description": "true()\n\nReturns the xs:boolean value true."
-  },
-  "fn:local-name#1": {
-    "body": "local-name($0)",
-    "prefix": "local-name",
-    "description": "local-name($arg node()?)\n\nReturns the local part of the name of $arg as an xs:string that is either the zero-length string, or has the lexical form of an xs:NCName."
-  },
-  "fn:unparsed-text#2": {
-    "body": "unparsed-text($0, $1)",
-    "prefix": "unparsed-text",
-    "description": "unparsed-text($href xs:string?, $encoding xs:string)\n\nThe fn:unparsed-text function reads an external resource (for example, a file) and returns a string representation of the resource."
-  },
-  "fn:contains-token#3": {
-    "body": "contains-token($0, $1, $2)",
-    "prefix": "contains-token",
-    "description": "contains-token($input xs:string*, $token xs:string, $collation xs:string)\n\nDetermines whether or not any of the supplied strings, when tokenized at whitespace boundaries, contains the supplied token, under the rules of the supplied collation."
-  },
-  "fn:element-with-id#1": {
-    "body": "element-with-id($0)",
-    "prefix": "element-with-id",
-    "description": "element-with-id($arg xs:string*)\n\nReturns the sequence of element nodes that have an ID value matching the value of one or more of the IDREF values supplied in $arg."
-  },
-  "fn:generate-id#0": {
-    "body": "generate-id()",
-    "prefix": "generate-id",
-    "description": "generate-id()\n\nThis function returns a string that uniquely identifies a given node."
-  },
-  "fn:min#1": {
-    "body": "min($0)",
-    "prefix": "min",
-    "description": "min($arg xs:anyAtomicType*)\n\nReturns a value that is equal to the lowest value appearing in the input sequence."
-  },
-  "fn:year-from-dateTime#1": {
-    "body": "year-from-dateTime($0)",
-    "prefix": "year-from-dateTime",
-    "description": "year-from-dateTime($arg xs:dateTime?)\n\nReturns the year component of an xs:dateTime."
-  },
-  "fn:avg#1": {
-    "body": "avg($0)",
-    "prefix": "avg",
-    "description": "avg($arg xs:anyAtomicType*)\n\nReturns the average of the values in the input sequence $arg, that is, the sum of the values divided by the number of values."
-  },
-  "fn:lang#1": {
-    "body": "lang($0)",
-    "prefix": "lang",
-    "description": "lang($testlang xs:string?)\n\nThis function tests whether the language of $node, or the context item if the second argument is omitted, as specified by xml:lang attributes is the same as, or is a sublanguage of, the language specified by $testlang."
-  },
-  "fn:current-dateTime#0": {
-    "body": "current-dateTime()",
-    "prefix": "current-dateTime",
-    "description": "current-dateTime()\n\nReturns the current date and time (with timezone)."
-  },
-  "fn:format-dateTime#2": {
-    "body": "format-dateTime($0, $1)",
-    "prefix": "format-dateTime",
-    "description": "format-dateTime($value xs:dateTime?, $picture xs:string)\n\nReturns a string containing an xs:dateTime value formatted for display."
-  },
-  "fn:substring#2": {
-    "body": "substring($0, $1)",
-    "prefix": "substring",
-    "description": "substring($sourceString xs:string?, $start xs:double)\n\nReturns the portion of the value of $sourceString beginning at the position indicated by the value of $start and continuing for the number of characters indicated by the value of $length."
+  "fn:QName#2": {
+    "body": "QName($0, $1)",
+    "description": "QName($paramURI xs:string?, $paramQName xs:string)\n\nReturns an xs:QName value formed using a supplied namespace URI and lexical QName.",
+    "prefix": "QName"
   },
   "fn:abs#1": {
     "body": "abs($0)",
-    "prefix": "abs",
-    "description": "abs($arg xs:numeric?)\n\nReturns the absolute value of $arg."
+    "description": "abs($arg xs:numeric?)\n\nReturns the absolute value of $arg.",
+    "prefix": "abs"
   },
-  "fn:hours-from-time#1": {
-    "body": "hours-from-time($0)",
-    "prefix": "hours-from-time",
-    "description": "hours-from-time($arg xs:time?)\n\nReturns the hours component of an xs:time."
+  "fn:adjust-date-to-timezone#1": {
+    "body": "adjust-date-to-timezone($0)",
+    "description": "adjust-date-to-timezone($arg xs:date?)\n\nAdjusts an xs:date value to a specific timezone, or to no timezone at all; the result is the date in the target timezone that contains the starting instant of the supplied date.",
+    "prefix": "adjust-date-to-timezone"
   },
-  "fn:element-with-id#2": {
-    "body": "element-with-id($0, $1)",
-    "prefix": "element-with-id",
-    "description": "element-with-id($arg xs:string*, $node node())\n\nReturns the sequence of element nodes that have an ID value matching the value of one or more of the IDREF values supplied in $arg."
-  },
-  "fn:parse-ietf-date#1": {
-    "body": "parse-ietf-date($0)",
-    "prefix": "parse-ietf-date",
-    "description": "parse-ietf-date($value xs:string?)\n\nParses a string containing the date and time in IETF format, returning the corresponding xs:dateTime value."
-  },
-  "fn:generate-id#1": {
-    "body": "generate-id($0)",
-    "prefix": "generate-id",
-    "description": "generate-id($arg node()?)\n\nThis function returns a string that uniquely identifies a given node."
-  },
-  "fn:min#2": {
-    "body": "min($0, $1)",
-    "prefix": "min",
-    "description": "min($arg xs:anyAtomicType*, $collation xs:string)\n\nReturns a value that is equal to the lowest value appearing in the input sequence."
-  },
-  "fn:not#1": {
-    "body": "not($0)",
-    "prefix": "not",
-    "description": "not($arg item()*)\n\nReturns true if the effective boolean value of $arg is false, or false if it is true."
-  },
-  "fn:lang#2": {
-    "body": "lang($0, $1)",
-    "prefix": "lang",
-    "description": "lang($testlang xs:string?, $node node())\n\nThis function tests whether the language of $node, or the context item if the second argument is omitted, as specified by xml:lang attributes is the same as, or is a sublanguage of, the language specified by $testlang."
-  },
-  "fn:distinct-values#1": {
-    "body": "distinct-values($0)",
-    "prefix": "distinct-values",
-    "description": "distinct-values($arg xs:anyAtomicType*)\n\nReturns the values that appear in a sequence, with duplicates eliminated."
-  },
-  "fn:substring#3": {
-    "body": "substring($0, $1, $2)",
-    "prefix": "substring",
-    "description": "substring($sourceString xs:string?, $start xs:double, $length xs:double)\n\nReturns the portion of the value of $sourceString beginning at the position indicated by the value of $start and continuing for the number of characters indicated by the value of $length."
-  },
-  "fn:base-uri#0": {
-    "body": "base-uri()",
-    "prefix": "base-uri",
-    "description": "base-uri()\n\nReturns the base URI of a node."
-  },
-  "fn:matches#2": {
-    "body": "matches($0, $1)",
-    "prefix": "matches",
-    "description": "matches($input xs:string?, $pattern xs:string)\n\nReturns true if the supplied string matches a given regular expression."
-  },
-  "fn:doc-available#1": {
-    "body": "doc-available($0)",
-    "prefix": "doc-available",
-    "description": "doc-available($uri xs:string?)\n\nThe function returns true if and only if the function call fn:doc($uri) would return a document node."
-  },
-  "fn:prefix-from-QName#1": {
-    "body": "prefix-from-QName($0)",
-    "prefix": "prefix-from-QName",
-    "description": "prefix-from-QName($arg xs:QName?)\n\nReturns the prefix component of the supplied QName."
-  },
-  "fn:distinct-values#2": {
-    "body": "distinct-values($0, $1)",
-    "prefix": "distinct-values",
-    "description": "distinct-values($arg xs:anyAtomicType*, $collation xs:string)\n\nReturns the values that appear in a sequence, with duplicates eliminated."
-  },
-  "fn:string#0": {
-    "body": "string()",
-    "prefix": "string",
-    "description": "string()\n\nReturns the value of $arg represented as an xs:string."
-  },
-  "fn:base-uri#1": {
-    "body": "base-uri($0)",
-    "prefix": "base-uri",
-    "description": "base-uri($arg node()?)\n\nReturns the base URI of a node."
-  },
-  "fn:unordered#1": {
-    "body": "unordered($0)",
-    "prefix": "unordered",
-    "description": "unordered($sourceSeq item()*)\n\nReturns the items of $sourceSeq in an implementation-dependent order."
-  },
-  "fn:tail#1": {
-    "body": "tail($0)",
-    "prefix": "tail",
-    "description": "tail($arg item()*)\n\nReturns all but the first item in a sequence."
-  },
-  "fn:has-children#0": {
-    "body": "has-children()",
-    "prefix": "has-children",
-    "description": "has-children()\n\nReturns true if the supplied node has one or more child nodes (of any kind)."
-  },
-  "fn:matches#3": {
-    "body": "matches($0, $1, $2)",
-    "prefix": "matches",
-    "description": "matches($input xs:string?, $pattern xs:string, $flags xs:string)\n\nReturns true if the supplied string matches a given regular expression."
-  },
-  "fn:insert-before#3": {
-    "body": "insert-before($0, $1, $2)",
-    "prefix": "insert-before",
-    "description": "insert-before($target item()*, $position xs:integer, $inserts item()*)\n\nReturns a sequence constructed by inserting an item or a sequence of items at a given position within an existing sequence."
-  },
-  "fn:encode-for-uri#1": {
-    "body": "encode-for-uri($0)",
-    "prefix": "encode-for-uri",
-    "description": "encode-for-uri($uri-part xs:string?)\n\nEncodes reserved characters in a string that is intended to be used in the path segment of a URI."
-  },
-  "fn:fold-left#3": {
-    "body": "fold-left($0, $1, $2)",
-    "prefix": "fold-left",
-    "description": "fold-left($seq item()*, $zero item()*, $f function(item()*, item()) as item()*)\n\nProcesses the supplied sequence from left to right, applying the supplied function repeatedly to each item in turn, together with an accumulated result value."
-  },
-  "fn:format-dateTime#5": {
-    "body": "format-dateTime($0, $1, $2, $3, $4)",
-    "prefix": "format-dateTime",
-    "description": "format-dateTime($value xs:dateTime?, $picture xs:string, $language xs:string?, $calendar xs:string?, $place xs:string?)\n\nReturns a string containing an xs:dateTime value formatted for display."
-  },
-  "fn:string#1": {
-    "body": "string($0)",
-    "prefix": "string",
-    "description": "string($arg item()?)\n\nReturns the value of $arg represented as an xs:string."
-  },
-  "fn:node-name#0": {
-    "body": "node-name()",
-    "prefix": "node-name",
-    "description": "node-name()\n\nReturns the name of a node, as an xs:QName."
-  },
-  "fn:round-half-to-even#1": {
-    "body": "round-half-to-even($0)",
-    "prefix": "round-half-to-even",
-    "description": "round-half-to-even($arg xs:numeric?)\n\nRounds a value to a specified number of decimal places, rounding to make the last digit even if two such values are equally near."
-  },
-  "fn:has-children#1": {
-    "body": "has-children($0)",
-    "prefix": "has-children",
-    "description": "has-children($node node()?)\n\nReturns true if the supplied node has one or more child nodes (of any kind)."
-  },
-  "fn:escape-html-uri#1": {
-    "body": "escape-html-uri($0)",
-    "prefix": "escape-html-uri",
-    "description": "escape-html-uri($uri xs:string?)\n\nEscapes a URI in the same way that HTML user agents handle attribute values expected to contain URIs."
-  },
-  "fn:replace#3": {
-    "body": "replace($0, $1, $2)",
-    "prefix": "replace",
-    "description": "replace($input xs:string?, $pattern xs:string, $replacement xs:string)\n\nReturns a string produced from the input string by replacing any substrings that match a given regular expression with a supplied replacement string."
-  },
-  "fn:node-name#1": {
-    "body": "node-name($0)",
-    "prefix": "node-name",
-    "description": "node-name($arg node()?)\n\nReturns the name of a node, as an xs:QName."
-  },
-  "fn:round-half-to-even#2": {
-    "body": "round-half-to-even($0, $1)",
-    "prefix": "round-half-to-even",
-    "description": "round-half-to-even($arg xs:numeric?, $precision xs:integer)\n\nRounds a value to a specified number of decimal places, rounding to make the last digit even if two such values are equally near."
-  },
-  "fn:fold-right#3": {
-    "body": "fold-right($0, $1, $2)",
-    "prefix": "fold-right",
-    "description": "fold-right($seq item()*, $zero item()*, $f function(item(), item()*) as item()*)\n\nProcesses the supplied sequence from right to left, applying the supplied function repeatedly to each item in turn, together with an accumulated result value."
-  },
-  "fn:analyze-string#2": {
-    "body": "analyze-string($0, $1)",
-    "prefix": "analyze-string",
-    "description": "analyze-string($input xs:string?, $pattern xs:string)\n\nAnalyzes a string using a regular expression, returning an XML structure that identifies which parts of the input string matched or failed to match the regular expression, and in the case of matched substrings, which substrings matched each capturing group in the regular expression."
-  },
-  "fn:json-doc#1": {
-    "body": "json-doc($0)",
-    "prefix": "json-doc",
-    "description": "json-doc($href xs:string?)\n\nReads an external resource containing JSON, and returns the result of parsing the resource as JSON."
-  },
-  "fn:replace#4": {
-    "body": "replace($0, $1, $2, $3)",
-    "prefix": "replace",
-    "description": "replace($input xs:string?, $pattern xs:string, $replacement xs:string, $flags xs:string)\n\nReturns a string produced from the input string by replacing any substrings that match a given regular expression with a supplied replacement string."
-  },
-  "fn:index-of#2": {
-    "body": "index-of($0, $1)",
-    "prefix": "index-of",
-    "description": "index-of($seq xs:anyAtomicType*, $search xs:anyAtomicType)\n\nReturns a sequence of positive integers giving the positions within the sequence $seq of items that are equal to $search."
+  "fn:adjust-date-to-timezone#2": {
+    "body": "adjust-date-to-timezone($0, $1)",
+    "description": "adjust-date-to-timezone($arg xs:date?, $timezone xs:dayTimeDuration?)\n\nAdjusts an xs:date value to a specific timezone, or to no timezone at all; the result is the date in the target timezone that contains the starting instant of the supplied date.",
+    "prefix": "adjust-date-to-timezone"
   },
   "fn:adjust-dateTime-to-timezone#1": {
     "body": "adjust-dateTime-to-timezone($0)",
-    "prefix": "adjust-dateTime-to-timezone",
-    "description": "adjust-dateTime-to-timezone($arg xs:dateTime?)\n\nAdjusts an xs:dateTime value to a specific timezone, or to no timezone at all."
-  },
-  "fn:analyze-string#3": {
-    "body": "analyze-string($0, $1, $2)",
-    "prefix": "analyze-string",
-    "description": "analyze-string($input xs:string?, $pattern xs:string, $flags xs:string)\n\nAnalyzes a string using a regular expression, returning an XML structure that identifies which parts of the input string matched or failed to match the regular expression, and in the case of matched substrings, which substrings matched each capturing group in the regular expression."
-  },
-  "fn:deep-equal#2": {
-    "body": "deep-equal($0, $1)",
-    "prefix": "deep-equal",
-    "description": "deep-equal($parameter1 item()*, $parameter2 item()*)\n\nThis function assesses whether two sequences are deep-equal to each other. To be deep-equal, they must contain items that are pairwise deep-equal; and for two items to be deep-equal, they must either be atomic values that compare equal, or nodes of the same kind, with the same name, whose children are deep-equal, or maps with matching entries, or arrays with matching members."
-  },
-  "fn:json-doc#2": {
-    "body": "json-doc($0, $1)",
-    "prefix": "json-doc",
-    "description": "json-doc($href xs:string?, $options map(*))\n\nReads an external resource containing JSON, and returns the result of parsing the resource as JSON."
-  },
-  "fn:available-environment-variables#0": {
-    "body": "available-environment-variables()",
-    "prefix": "available-environment-variables",
-    "description": "available-environment-variables()\n\nReturns a list of environment variable names that are suitable for passing to fn:environment-variable, as a (possibly empty) sequence of strings."
-  },
-  "fn:doc#1": {
-    "body": "doc($0)",
-    "prefix": "doc",
-    "description": "doc($uri xs:string?)\n\nRetrieves a document using a URI supplied as an xs:string, and returns the corresponding document node."
-  },
-  "fn:index-of#3": {
-    "body": "index-of($0, $1, $2)",
-    "prefix": "index-of",
-    "description": "index-of($seq xs:anyAtomicType*, $search xs:anyAtomicType, $collation xs:string)\n\nReturns a sequence of positive integers giving the positions within the sequence $seq of items that are equal to $search."
+    "description": "adjust-dateTime-to-timezone($arg xs:dateTime?)\n\nAdjusts an xs:dateTime value to a specific timezone, or to no timezone at all.",
+    "prefix": "adjust-dateTime-to-timezone"
   },
   "fn:adjust-dateTime-to-timezone#2": {
     "body": "adjust-dateTime-to-timezone($0, $1)",
-    "prefix": "adjust-dateTime-to-timezone",
-    "description": "adjust-dateTime-to-timezone($arg xs:dateTime?, $timezone xs:dayTimeDuration?)\n\nAdjusts an xs:dateTime value to a specific timezone, or to no timezone at all."
+    "description": "adjust-dateTime-to-timezone($arg xs:dateTime?, $timezone xs:dayTimeDuration?)\n\nAdjusts an xs:dateTime value to a specific timezone, or to no timezone at all.",
+    "prefix": "adjust-dateTime-to-timezone"
   },
-  "fn:random-number-generator#0": {
-    "body": "random-number-generator()",
-    "prefix": "random-number-generator",
-    "description": "random-number-generator()\n\nReturns a random number generator, which can be used to generate sequences of random numbers."
+  "fn:adjust-time-to-timezone#1": {
+    "body": "adjust-time-to-timezone($0)",
+    "description": "adjust-time-to-timezone($arg xs:time?)\n\nAdjusts an xs:time value to a specific timezone, or to no timezone at all.",
+    "prefix": "adjust-time-to-timezone"
   },
-  "fn:idref#1": {
-    "body": "idref($0)",
-    "prefix": "idref",
-    "description": "idref($arg xs:string*)\n\nReturns the sequence of element or attribute nodes with an IDREF value matching the value of one or more of the ID values supplied in $arg."
+  "fn:adjust-time-to-timezone#2": {
+    "body": "adjust-time-to-timezone($0, $1)",
+    "description": "adjust-time-to-timezone($arg xs:time?, $timezone xs:dayTimeDuration?)\n\nAdjusts an xs:time value to a specific timezone, or to no timezone at all.",
+    "prefix": "adjust-time-to-timezone"
   },
-  "fn:one-or-more#1": {
-    "body": "one-or-more($0)",
-    "prefix": "one-or-more",
-    "description": "one-or-more($arg item()*)\n\nReturns $arg if it contains one or more items. Otherwise, raises an error."
+  "fn:analyze-string#2": {
+    "body": "analyze-string($0, $1)",
+    "description": "analyze-string($input xs:string?, $pattern xs:string)\n\nAnalyzes a string using a regular expression, returning an XML structure that identifies which parts of the input string matched or failed to match the regular expression, and in the case of matched substrings, which substrings matched each capturing group in the regular expression.",
+    "prefix": "analyze-string"
   },
-  "fn:deep-equal#3": {
-    "body": "deep-equal($0, $1, $2)",
-    "prefix": "deep-equal",
-    "description": "deep-equal($parameter1 item()*, $parameter2 item()*, $collation xs:string)\n\nThis function assesses whether two sequences are deep-equal to each other. To be deep-equal, they must contain items that are pairwise deep-equal; and for two items to be deep-equal, they must either be atomic values that compare equal, or nodes of the same kind, with the same name, whose children are deep-equal, or maps with matching entries, or arrays with matching members."
+  "fn:analyze-string#3": {
+    "body": "analyze-string($0, $1, $2)",
+    "description": "analyze-string($input xs:string?, $pattern xs:string, $flags xs:string)\n\nAnalyzes a string using a regular expression, returning an XML structure that identifies which parts of the input string matched or failed to match the regular expression, and in the case of matched substrings, which substrings matched each capturing group in the regular expression.",
+    "prefix": "analyze-string"
   },
-  "fn:last#0": {
-    "body": "last()",
-    "prefix": "last",
-    "description": "last()\n\nReturns the context size from the dynamic context."
+  "fn:apply#2": {
+    "body": "apply($0, $1)",
+    "description": "apply($function function(*), $array array(*))\n\nMakes a dynamic call on a function with an argument list supplied in the form of an array.",
+    "prefix": "apply"
   },
-  "fn:namespace-uri#0": {
-    "body": "namespace-uri()",
-    "prefix": "namespace-uri",
-    "description": "namespace-uri()\n\nReturns the namespace URI part of the name of $arg, as an xs:anyURI value."
+  "fn:available-environment-variables#0": {
+    "body": "available-environment-variables()",
+    "description": "available-environment-variables()\n\nReturns a list of environment variable names that are suitable for passing to fn:environment-variable, as a (possibly empty) sequence of strings.",
+    "prefix": "available-environment-variables"
   },
-  "fn:innermost#1": {
-    "body": "innermost($0)",
-    "prefix": "innermost",
-    "description": "innermost($nodes node()*)\n\nReturns every node within the input sequence that is not an ancestor of another member of the input sequence; the nodes are returned in document order with duplicates eliminated."
+  "fn:avg#1": {
+    "body": "avg($0)",
+    "description": "avg($arg xs:anyAtomicType*)\n\nReturns the average of the values in the input sequence $arg, that is, the sum of the values divided by the number of values.",
+    "prefix": "avg"
   },
-  "fn:local-name-from-QName#1": {
-    "body": "local-name-from-QName($0)",
-    "prefix": "local-name-from-QName",
-    "description": "local-name-from-QName($arg xs:QName?)\n\nReturns the local part of the supplied QName."
+  "fn:base-uri#0": {
+    "body": "base-uri()",
+    "description": "base-uri()\n\nReturns the base URI of a node.",
+    "prefix": "base-uri"
   },
-  "fn:random-number-generator#1": {
-    "body": "random-number-generator($0)",
-    "prefix": "random-number-generator",
-    "description": "random-number-generator($seed xs:anyAtomicType?)\n\nReturns a random number generator, which can be used to generate sequences of random numbers."
+  "fn:base-uri#1": {
+    "body": "base-uri($0)",
+    "description": "base-uri($arg node()?)\n\nReturns the base URI of a node.",
+    "prefix": "base-uri"
   },
-  "fn:hours-from-duration#1": {
-    "body": "hours-from-duration($0)",
-    "prefix": "hours-from-duration",
-    "description": "hours-from-duration($arg xs:duration?)\n\nReturns the number of hours in a duration."
-  },
-  "fn:idref#2": {
-    "body": "idref($0, $1)",
-    "prefix": "idref",
-    "description": "idref($arg xs:string*, $node node())\n\nReturns the sequence of element or attribute nodes with an IDREF value matching the value of one or more of the ID values supplied in $arg."
-  },
-  "fn:concat#3": {
-    "body": "concat($0, $1, $2)",
-    "prefix": "concat",
-    "description": "concat($arg1 xs:anyAtomicType?, $arg2 xs:anyAtomicType?, $... xs:anyAtomicType?)\n\nReturns the concatenation of the string values of the arguments."
-  },
-  "fn:namespace-uri#1": {
-    "body": "namespace-uri($0)",
-    "prefix": "namespace-uri",
-    "description": "namespace-uri($arg node()?)\n\nReturns the namespace URI part of the name of $arg, as an xs:anyURI value."
-  },
-  "fn:environment-variable#1": {
-    "body": "environment-variable($0)",
-    "prefix": "environment-variable",
-    "description": "environment-variable($name xs:string)\n\nReturns the value of a system environment variable, if it exists."
-  },
-  "fn:collation-key#1": {
-    "body": "collation-key($0)",
-    "prefix": "collation-key",
-    "description": "collation-key($key xs:string)\n\nGiven a string value and a collation, generates an internal value called a collation key, with the property that the matching and ordering of collation keys reflects the matching and ordering of strings under the specified collation."
-  },
-  "fn:ends-with#2": {
-    "body": "ends-with($0, $1)",
-    "prefix": "ends-with",
-    "description": "ends-with($arg1 xs:string?, $arg2 xs:string?)\n\nReturns true if the string $arg1 contains $arg2 as a trailing substring, taking collations into account."
-  },
-  "fn:collation-key#2": {
-    "body": "collation-key($0, $1)",
-    "prefix": "collation-key",
-    "description": "collation-key($key xs:string, $collation xs:string)\n\nGiven a string value and a collation, generates an internal value called a collation key, with the property that the matching and ordering of collation keys reflects the matching and ordering of strings under the specified collation."
-  },
-  "fn:resolve-QName#2": {
-    "body": "resolve-QName($0, $1)",
-    "prefix": "resolve-QName",
-    "description": "resolve-QName($qname xs:string?, $element element())\n\nReturns an xs:QName value (that is, an expanded-QName) by taking an xs:string that has the lexical form of an xs:QName (a string in the form \"prefix:local-name\" or \"local-name\") and resolving it using the in-scope namespaces for a given element."
-  },
-  "fn:default-collation#0": {
-    "body": "default-collation()",
-    "prefix": "default-collation",
-    "description": "default-collation()\n\nReturns the value of the default collation property from the static context."
-  },
-  "fn:filter#2": {
-    "body": "filter($0, $1)",
-    "prefix": "filter",
-    "description": "filter($seq item()*, $f function(item()) as xs:boolean)\n\nReturns those items from the sequence $seq for which the supplied function $f returns true."
-  },
-  "fn:ends-with#3": {
-    "body": "ends-with($0, $1, $2)",
-    "prefix": "ends-with",
-    "description": "ends-with($arg1 xs:string?, $arg2 xs:string?, $collation xs:string)\n\nReturns true if the string $arg1 contains $arg2 as a trailing substring, taking collations into account."
-  },
-  "fn:document-uri#0": {
-    "body": "document-uri()",
-    "prefix": "document-uri",
-    "description": "document-uri()\n\nReturns the URI of a resource where a document can be found, if available."
+  "fn:boolean#1": {
+    "body": "boolean($0)",
+    "description": "boolean($arg item()*)\n\nComputes the effective boolean value of the sequence $arg.",
+    "prefix": "boolean"
   },
   "fn:ceiling#1": {
     "body": "ceiling($0)",
-    "prefix": "ceiling",
-    "description": "ceiling($arg xs:numeric?)\n\nRounds $arg upwards to a whole number."
+    "description": "ceiling($arg xs:numeric?)\n\nRounds $arg upwards to a whole number.",
+    "prefix": "ceiling"
   },
-  "fn:nilled#0": {
-    "body": "nilled()",
-    "prefix": "nilled",
-    "description": "nilled()\n\nReturns true for an element that is nilled."
+  "fn:codepoint-equal#2": {
+    "body": "codepoint-equal($0, $1)",
+    "description": "codepoint-equal($comparand1 xs:string?, $comparand2 xs:string?)\n\nReturns true if two strings are equal, considered codepoint-by-codepoint.",
+    "prefix": "codepoint-equal"
   },
-  "fn:QName#2": {
-    "body": "QName($0, $1)",
-    "prefix": "QName",
-    "description": "QName($paramURI xs:string?, $paramQName xs:string)\n\nReturns an xs:QName value formed using a supplied namespace URI and lexical QName."
+  "fn:codepoints-to-string#1": {
+    "body": "codepoints-to-string($0)",
+    "description": "codepoints-to-string($arg xs:integer*)\n\nReturns an xs:string whose characters have supplied codepoints.",
+    "prefix": "codepoints-to-string"
   },
-  "fn:parse-xml#1": {
-    "body": "parse-xml($0)",
-    "prefix": "parse-xml",
-    "description": "parse-xml($arg xs:string?)\n\nThis function takes as input an XML document represented as a string, and returns the document node at the root of an XDM tree representing the parsed document."
+  "fn:collation-key#1": {
+    "body": "collation-key($0)",
+    "description": "collation-key($key xs:string)\n\nGiven a string value and a collation, generates an internal value called a collation key, with the property that the matching and ordering of collation keys reflects the matching and ordering of strings under the specified collation.",
+    "prefix": "collation-key"
   },
-  "fn:normalize-unicode#1": {
-    "body": "normalize-unicode($0)",
-    "prefix": "normalize-unicode",
-    "description": "normalize-unicode($arg xs:string?)\n\nReturns the value of $arg after applying Unicode normalization."
-  },
-  "fn:document-uri#1": {
-    "body": "document-uri($0)",
-    "prefix": "document-uri",
-    "description": "document-uri($arg node()?)\n\nReturns the URI of a resource where a document can be found, if available."
-  },
-  "fn:nilled#1": {
-    "body": "nilled($0)",
-    "prefix": "nilled",
-    "description": "nilled($arg node()?)\n\nReturns true for an element that is nilled."
-  },
-  "fn:normalize-unicode#2": {
-    "body": "normalize-unicode($0, $1)",
-    "prefix": "normalize-unicode",
-    "description": "normalize-unicode($arg xs:string?, $normalizationForm xs:string)\n\nReturns the value of $arg after applying Unicode normalization."
-  },
-  "fn:outermost#1": {
-    "body": "outermost($0)",
-    "prefix": "outermost",
-    "description": "outermost($nodes node()*)\n\nReturns every node within the input sequence that has no ancestor that is itself a member of the input sequence; the nodes are returned in document order with duplicates eliminated."
-  },
-  "fn:tokenize#1": {
-    "body": "tokenize($0)",
-    "prefix": "tokenize",
-    "description": "tokenize($input xs:string?)\n\nReturns a sequence of strings constructed by splitting the input wherever a separator is found; the separator is any substring that matches a given regular expression."
-  },
-  "fn:upper-case#1": {
-    "body": "upper-case($0)",
-    "prefix": "upper-case",
-    "description": "upper-case($arg xs:string?)\n\nConverts a string to upper case."
-  },
-  "fn:id#1": {
-    "body": "id($0)",
-    "prefix": "id",
-    "description": "id($arg xs:string*)\n\nReturns the sequence of element nodes that have an ID value matching the value of one or more of the IDREF values supplied in $arg."
-  },
-  "fn:substring-before#2": {
-    "body": "substring-before($0, $1)",
-    "prefix": "substring-before",
-    "description": "substring-before($arg1 xs:string?, $arg2 xs:string?)\n\nReturns the part of $arg1 that precedes the first occurrence of $arg2, taking collations into account."
-  },
-  "fn:exists#1": {
-    "body": "exists($0)",
-    "prefix": "exists",
-    "description": "exists($arg item()*)\n\nReturns true if the argument is a non-empty sequence."
-  },
-  "fn:tokenize#2": {
-    "body": "tokenize($0, $1)",
-    "prefix": "tokenize",
-    "description": "tokenize($input xs:string?, $pattern xs:string)\n\nReturns a sequence of strings constructed by splitting the input wherever a separator is found; the separator is any substring that matches a given regular expression."
-  },
-  "fn:day-from-date#1": {
-    "body": "day-from-date($0)",
-    "prefix": "day-from-date",
-    "description": "day-from-date($arg xs:date?)\n\nReturns the day component of an xs:date."
-  },
-  "fn:function-name#1": {
-    "body": "function-name($0)",
-    "prefix": "function-name",
-    "description": "function-name($func function(*))\n\nReturns the name of the function identified by a function item."
-  },
-  "fn:implicit-timezone#0": {
-    "body": "implicit-timezone()",
-    "prefix": "implicit-timezone",
-    "description": "implicit-timezone()\n\nReturns the value of the implicit timezone property from the dynamic context."
-  },
-  "fn:lower-case#1": {
-    "body": "lower-case($0)",
-    "prefix": "lower-case",
-    "description": "lower-case($arg xs:string?)\n\nConverts a string to lower case."
-  },
-  "fn:years-from-duration#1": {
-    "body": "years-from-duration($0)",
-    "prefix": "years-from-duration",
-    "description": "years-from-duration($arg xs:duration?)\n\nReturns the number of years in a duration."
-  },
-  "fn:id#2": {
-    "body": "id($0, $1)",
-    "prefix": "id",
-    "description": "id($arg xs:string*, $node node())\n\nReturns the sequence of element nodes that have an ID value matching the value of one or more of the IDREF values supplied in $arg."
-  },
-  "fn:timezone-from-time#1": {
-    "body": "timezone-from-time($0)",
-    "prefix": "timezone-from-time",
-    "description": "timezone-from-time($arg xs:time?)\n\nReturns the timezone component of an xs:time."
-  },
-  "fn:dateTime#2": {
-    "body": "dateTime($0, $1)",
-    "prefix": "dateTime",
-    "description": "dateTime($arg1 xs:date?, $arg2 xs:time?)\n\nReturns an xs:dateTime value created by combining an xs:date and an xs:time."
-  },
-  "fn:hours-from-dateTime#1": {
-    "body": "hours-from-dateTime($0)",
-    "prefix": "hours-from-dateTime",
-    "description": "hours-from-dateTime($arg xs:dateTime?)\n\nReturns the hours component of an xs:dateTime."
-  },
-  "fn:serialize#1": {
-    "body": "serialize($0)",
-    "prefix": "serialize",
-    "description": "serialize($arg item()*)\n\nThis function serializes the supplied input sequence $arg as described in , returning the serialized representation of the sequence as a string."
-  },
-  "fn:format-number#2": {
-    "body": "format-number($0, $1)",
-    "prefix": "format-number",
-    "description": "format-number($value xs:numeric?, $picture xs:string)\n\nReturns a string containing a number formatted according to a given picture string, taking account of decimal formats specified in the static context."
-  },
-  "fn:substring-before#3": {
-    "body": "substring-before($0, $1, $2)",
-    "prefix": "substring-before",
-    "description": "substring-before($arg1 xs:string?, $arg2 xs:string?, $collation xs:string)\n\nReturns the part of $arg1 that precedes the first occurrence of $arg2, taking collations into account."
-  },
-  "fn:tokenize#3": {
-    "body": "tokenize($0, $1, $2)",
-    "prefix": "tokenize",
-    "description": "tokenize($input xs:string?, $pattern xs:string, $flags xs:string)\n\nReturns a sequence of strings constructed by splitting the input wherever a separator is found; the separator is any substring that matches a given regular expression."
+  "fn:collation-key#2": {
+    "body": "collation-key($0, $1)",
+    "description": "collation-key($key xs:string, $collation xs:string)\n\nGiven a string value and a collation, generates an internal value called a collation key, with the property that the matching and ordering of collation keys reflects the matching and ordering of strings under the specified collation.",
+    "prefix": "collation-key"
   },
   "fn:collection#0": {
     "body": "collection()",
-    "prefix": "collection",
-    "description": "collection()\n\nReturns a sequence of items identified by a collection URI; or a default collection if no URI is supplied."
-  },
-  "fn:string-length#0": {
-    "body": "string-length()",
-    "prefix": "string-length",
-    "description": "string-length()\n\nReturns the number of characters in a string."
-  },
-  "fn:substring-after#2": {
-    "body": "substring-after($0, $1)",
-    "prefix": "substring-after",
-    "description": "substring-after($arg1 xs:string?, $arg2 xs:string?)\n\nReturns the part of $arg1 that follows the first occurrence of $arg2, taking collations into account."
-  },
-  "fn:months-from-duration#1": {
-    "body": "months-from-duration($0)",
-    "prefix": "months-from-duration",
-    "description": "months-from-duration($arg xs:duration?)\n\nReturns the number of months in a duration."
-  },
-  "fn:in-scope-prefixes#1": {
-    "body": "in-scope-prefixes($0)",
-    "prefix": "in-scope-prefixes",
-    "description": "in-scope-prefixes($element element())\n\nReturns the prefixes of the in-scope namespaces for an element node."
-  },
-  "fn:zero-or-one#1": {
-    "body": "zero-or-one($0)",
-    "prefix": "zero-or-one",
-    "description": "zero-or-one($arg item()*)\n\nReturns $arg if it contains zero or one items. Otherwise, raises an error."
-  },
-  "fn:serialize#2": {
-    "body": "serialize($0, $1)",
-    "prefix": "serialize",
-    "description": "serialize($arg item()*, $params item()?)\n\nThis function serializes the supplied input sequence $arg as described in , returning the serialized representation of the sequence as a string."
-  },
-  "fn:timezone-from-date#1": {
-    "body": "timezone-from-date($0)",
-    "prefix": "timezone-from-date",
-    "description": "timezone-from-date($arg xs:date?)\n\nReturns the timezone component of an xs:date."
-  },
-  "fn:format-number#3": {
-    "body": "format-number($0, $1, $2)",
-    "prefix": "format-number",
-    "description": "format-number($value xs:numeric?, $picture xs:string, $decimal-format-name xs:string?)\n\nReturns a string containing a number formatted according to a given picture string, taking account of decimal formats specified in the static context."
-  },
-  "fn:false#0": {
-    "body": "false()",
-    "prefix": "false",
-    "description": "false()\n\nReturns the xs:boolean value false."
+    "description": "collection()\n\nReturns a sequence of items identified by a collection URI; or a default collection if no URI is supplied.",
+    "prefix": "collection"
   },
   "fn:collection#1": {
     "body": "collection($0)",
-    "prefix": "collection",
-    "description": "collection($arg xs:string?)\n\nReturns a sequence of items identified by a collection URI; or a default collection if no URI is supplied."
+    "description": "collection($arg xs:string?)\n\nReturns a sequence of items identified by a collection URI; or a default collection if no URI is supplied.",
+    "prefix": "collection"
   },
-  "fn:string-length#1": {
-    "body": "string-length($0)",
-    "prefix": "string-length",
-    "description": "string-length($arg xs:string?)\n\nReturns the number of characters in a string."
+  "fn:compare#2": {
+    "body": "compare($0, $1)",
+    "description": "compare($comparand1 xs:string?, $comparand2 xs:string?)\n\nReturns -1, 0, or 1, depending on whether $comparand1 collates before, equal to, or after $comparand2 according to the rules of a selected collation.",
+    "prefix": "compare"
   },
-  "fn:sort#1": {
-    "body": "sort($0)",
-    "prefix": "sort",
-    "description": "sort($input item()*)\n\nSorts a supplied sequence, based on the value of a sort key supplied as a function."
+  "fn:compare#3": {
+    "body": "compare($0, $1, $2)",
+    "description": "compare($comparand1 xs:string?, $comparand2 xs:string?, $collation xs:string)\n\nReturns -1, 0, or 1, depending on whether $comparand1 collates before, equal to, or after $comparand2 according to the rules of a selected collation.",
+    "prefix": "compare"
   },
-  "fn:substring-after#3": {
-    "body": "substring-after($0, $1, $2)",
-    "prefix": "substring-after",
-    "description": "substring-after($arg1 xs:string?, $arg2 xs:string?, $collation xs:string)\n\nReturns the part of $arg1 that follows the first occurrence of $arg2, taking collations into account."
+  "fn:concat#3": {
+    "body": "concat($0, $1, $2)",
+    "description": "concat($arg1 xs:anyAtomicType?, $arg2 xs:anyAtomicType?, $... xs:anyAtomicType?)\n\nReturns the concatenation of the string values of the arguments.",
+    "prefix": "concat"
+  },
+  "fn:contains#2": {
+    "body": "contains($0, $1)",
+    "description": "contains($arg1 xs:string?, $arg2 xs:string?)\n\nReturns true if the string $arg1 contains $arg2 as a substring, taking collations into account.",
+    "prefix": "contains"
+  },
+  "fn:contains#3": {
+    "body": "contains($0, $1, $2)",
+    "description": "contains($arg1 xs:string?, $arg2 xs:string?, $collation xs:string)\n\nReturns true if the string $arg1 contains $arg2 as a substring, taking collations into account.",
+    "prefix": "contains"
+  },
+  "fn:contains-token#2": {
+    "body": "contains-token($0, $1)",
+    "description": "contains-token($input xs:string*, $token xs:string)\n\nDetermines whether or not any of the supplied strings, when tokenized at whitespace boundaries, contains the supplied token, under the rules of the supplied collation.",
+    "prefix": "contains-token"
+  },
+  "fn:contains-token#3": {
+    "body": "contains-token($0, $1, $2)",
+    "description": "contains-token($input xs:string*, $token xs:string, $collation xs:string)\n\nDetermines whether or not any of the supplied strings, when tokenized at whitespace boundaries, contains the supplied token, under the rules of the supplied collation.",
+    "prefix": "contains-token"
+  },
+  "fn:count#1": {
+    "body": "count($0)",
+    "description": "count($arg item()*)\n\nReturns the number of items in a sequence.",
+    "prefix": "count"
+  },
+  "fn:current-date#0": {
+    "body": "current-date()",
+    "description": "current-date()\n\nReturns the current date.",
+    "prefix": "current-date"
+  },
+  "fn:current-dateTime#0": {
+    "body": "current-dateTime()",
+    "description": "current-dateTime()\n\nReturns the current date and time (with timezone).",
+    "prefix": "current-dateTime"
+  },
+  "fn:current-time#0": {
+    "body": "current-time()",
+    "description": "current-time()\n\nReturns the current time.",
+    "prefix": "current-time"
+  },
+  "fn:data#0": {
+    "body": "data()",
+    "description": "data()\n\nReturns the result of atomizing a sequence. This process flattens arrays, and replaces nodes by their typed values.",
+    "prefix": "data"
+  },
+  "fn:data#1": {
+    "body": "data($0)",
+    "description": "data($arg item()*)\n\nReturns the result of atomizing a sequence. This process flattens arrays, and replaces nodes by their typed values.",
+    "prefix": "data"
+  },
+  "fn:dateTime#2": {
+    "body": "dateTime($0, $1)",
+    "description": "dateTime($arg1 xs:date?, $arg2 xs:time?)\n\nReturns an xs:dateTime value created by combining an xs:date and an xs:time.",
+    "prefix": "dateTime"
+  },
+  "fn:day-from-date#1": {
+    "body": "day-from-date($0)",
+    "description": "day-from-date($arg xs:date?)\n\nReturns the day component of an xs:date.",
+    "prefix": "day-from-date"
+  },
+  "fn:day-from-dateTime#1": {
+    "body": "day-from-dateTime($0)",
+    "description": "day-from-dateTime($arg xs:dateTime?)\n\nReturns the day component of an xs:dateTime.",
+    "prefix": "day-from-dateTime"
+  },
+  "fn:days-from-duration#1": {
+    "body": "days-from-duration($0)",
+    "description": "days-from-duration($arg xs:duration?)\n\nReturns the number of days in a duration.",
+    "prefix": "days-from-duration"
+  },
+  "fn:deep-equal#2": {
+    "body": "deep-equal($0, $1)",
+    "description": "deep-equal($parameter1 item()*, $parameter2 item()*)\n\nThis function assesses whether two sequences are deep-equal to each other. To be deep-equal, they must contain items that are pairwise deep-equal; and for two items to be deep-equal, they must either be atomic values that compare equal, or nodes of the same kind, with the same name, whose children are deep-equal, or maps with matching entries, or arrays with matching members.",
+    "prefix": "deep-equal"
+  },
+  "fn:deep-equal#3": {
+    "body": "deep-equal($0, $1, $2)",
+    "description": "deep-equal($parameter1 item()*, $parameter2 item()*, $collation xs:string)\n\nThis function assesses whether two sequences are deep-equal to each other. To be deep-equal, they must contain items that are pairwise deep-equal; and for two items to be deep-equal, they must either be atomic values that compare equal, or nodes of the same kind, with the same name, whose children are deep-equal, or maps with matching entries, or arrays with matching members.",
+    "prefix": "deep-equal"
+  },
+  "fn:default-collation#0": {
+    "body": "default-collation()",
+    "description": "default-collation()\n\nReturns the value of the default collation property from the static context.",
+    "prefix": "default-collation"
+  },
+  "fn:default-language#0": {
+    "body": "default-language()",
+    "description": "default-language()\n\nReturns the value of the default language property from the dynamic context.",
+    "prefix": "default-language"
+  },
+  "fn:distinct-values#1": {
+    "body": "distinct-values($0)",
+    "description": "distinct-values($arg xs:anyAtomicType*)\n\nReturns the values that appear in a sequence, with duplicates eliminated.",
+    "prefix": "distinct-values"
+  },
+  "fn:distinct-values#2": {
+    "body": "distinct-values($0, $1)",
+    "description": "distinct-values($arg xs:anyAtomicType*, $collation xs:string)\n\nReturns the values that appear in a sequence, with duplicates eliminated.",
+    "prefix": "distinct-values"
+  },
+  "fn:doc#1": {
+    "body": "doc($0)",
+    "description": "doc($uri xs:string?)\n\nRetrieves a document using a URI supplied as an xs:string, and returns the corresponding document node.",
+    "prefix": "doc"
+  },
+  "fn:doc-available#1": {
+    "body": "doc-available($0)",
+    "description": "doc-available($uri xs:string?)\n\nThe function returns true if and only if the function call fn:doc($uri) would return a document node.",
+    "prefix": "doc-available"
+  },
+  "fn:document-uri#0": {
+    "body": "document-uri()",
+    "description": "document-uri()\n\nReturns the URI of a resource where a document can be found, if available.",
+    "prefix": "document-uri"
+  },
+  "fn:document-uri#1": {
+    "body": "document-uri($0)",
+    "description": "document-uri($arg node()?)\n\nReturns the URI of a resource where a document can be found, if available.",
+    "prefix": "document-uri"
+  },
+  "fn:element-with-id#1": {
+    "body": "element-with-id($0)",
+    "description": "element-with-id($arg xs:string*)\n\nReturns the sequence of element nodes that have an ID value matching the value of one or more of the IDREF values supplied in $arg.",
+    "prefix": "element-with-id"
+  },
+  "fn:element-with-id#2": {
+    "body": "element-with-id($0, $1)",
+    "description": "element-with-id($arg xs:string*, $node node())\n\nReturns the sequence of element nodes that have an ID value matching the value of one or more of the IDREF values supplied in $arg.",
+    "prefix": "element-with-id"
+  },
+  "fn:empty#1": {
+    "body": "empty($0)",
+    "description": "empty($arg item()*)\n\nReturns true if the argument is the empty sequence.",
+    "prefix": "empty"
+  },
+  "fn:encode-for-uri#1": {
+    "body": "encode-for-uri($0)",
+    "description": "encode-for-uri($uri-part xs:string?)\n\nEncodes reserved characters in a string that is intended to be used in the path segment of a URI.",
+    "prefix": "encode-for-uri"
+  },
+  "fn:ends-with#2": {
+    "body": "ends-with($0, $1)",
+    "description": "ends-with($arg1 xs:string?, $arg2 xs:string?)\n\nReturns true if the string $arg1 contains $arg2 as a trailing substring, taking collations into account.",
+    "prefix": "ends-with"
+  },
+  "fn:ends-with#3": {
+    "body": "ends-with($0, $1, $2)",
+    "description": "ends-with($arg1 xs:string?, $arg2 xs:string?, $collation xs:string)\n\nReturns true if the string $arg1 contains $arg2 as a trailing substring, taking collations into account.",
+    "prefix": "ends-with"
+  },
+  "fn:environment-variable#1": {
+    "body": "environment-variable($0)",
+    "description": "environment-variable($name xs:string)\n\nReturns the value of a system environment variable, if it exists.",
+    "prefix": "environment-variable"
+  },
+  "fn:error#0": {
+    "body": "error()",
+    "description": "error()\n\nCalling the fn:error function raises an application-defined error.",
+    "prefix": "error"
+  },
+  "fn:error#1": {
+    "body": "error($0)",
+    "description": "error($code xs:QName?)\n\nCalling the fn:error function raises an application-defined error.",
+    "prefix": "error"
+  },
+  "fn:error#2": {
+    "body": "error($0, $1)",
+    "description": "error($code xs:QName?, $description xs:string)\n\nCalling the fn:error function raises an application-defined error.",
+    "prefix": "error"
+  },
+  "fn:error#3": {
+    "body": "error($0, $1, $2)",
+    "description": "error($code xs:QName?, $description xs:string, $error-object item()*)\n\nCalling the fn:error function raises an application-defined error.",
+    "prefix": "error"
+  },
+  "fn:escape-html-uri#1": {
+    "body": "escape-html-uri($0)",
+    "description": "escape-html-uri($uri xs:string?)\n\nEscapes a URI in the same way that HTML user agents handle attribute values expected to contain URIs.",
+    "prefix": "escape-html-uri"
+  },
+  "fn:exactly-one#1": {
+    "body": "exactly-one($0)",
+    "description": "exactly-one($arg item()*)\n\nReturns $arg if it contains exactly one item. Otherwise, raises an error.",
+    "prefix": "exactly-one"
+  },
+  "fn:exists#1": {
+    "body": "exists($0)",
+    "description": "exists($arg item()*)\n\nReturns true if the argument is a non-empty sequence.",
+    "prefix": "exists"
+  },
+  "fn:false#0": {
+    "body": "false()",
+    "description": "false()\n\nReturns the xs:boolean value false.",
+    "prefix": "false"
+  },
+  "fn:filter#2": {
+    "body": "filter($0, $1)",
+    "description": "filter($seq item()*, $f function(item()) as xs:boolean)\n\nReturns those items from the sequence $seq for which the supplied function $f returns true.",
+    "prefix": "filter"
+  },
+  "fn:floor#1": {
+    "body": "floor($0)",
+    "description": "floor($arg xs:numeric?)\n\nRounds $arg downwards to a whole number.",
+    "prefix": "floor"
+  },
+  "fn:fold-left#3": {
+    "body": "fold-left($0, $1, $2)",
+    "description": "fold-left($seq item()*, $zero item()*, $f function(item()*, item()) as item()*)\n\nProcesses the supplied sequence from left to right, applying the supplied function repeatedly to each item in turn, together with an accumulated result value.",
+    "prefix": "fold-left"
+  },
+  "fn:fold-right#3": {
+    "body": "fold-right($0, $1, $2)",
+    "description": "fold-right($seq item()*, $zero item()*, $f function(item(), item()*) as item()*)\n\nProcesses the supplied sequence from right to left, applying the supplied function repeatedly to each item in turn, together with an accumulated result value.",
+    "prefix": "fold-right"
+  },
+  "fn:for-each#2": {
+    "body": "for-each($0, $1)",
+    "description": "for-each($seq item()*, $action function(item()) as item()*)\n\nApplies the function item $action to every item from the sequence $seq in turn, returning the concatenation of the resulting sequences in order.",
+    "prefix": "for-each"
+  },
+  "fn:for-each-pair#3": {
+    "body": "for-each-pair($0, $1, $2)",
+    "description": "for-each-pair($seq1 item()*, $seq2 item()*, $action function(item(), item()) as item()*)\n\nApplies the function item $action to successive pairs of items taken one from $seq1 and one from $seq2, returning the concatenation of the resulting sequences in order.",
+    "prefix": "for-each-pair"
+  },
+  "fn:format-date#2": {
+    "body": "format-date($0, $1)",
+    "description": "format-date($value xs:date?, $picture xs:string)\n\nReturns a string containing an xs:date value formatted for display.",
+    "prefix": "format-date"
+  },
+  "fn:format-date#5": {
+    "body": "format-date($0, $1, $2, $3, $4)",
+    "description": "format-date($value xs:date?, $picture xs:string, $language xs:string?, $calendar xs:string?, $place xs:string?)\n\nReturns a string containing an xs:date value formatted for display.",
+    "prefix": "format-date"
+  },
+  "fn:format-dateTime#2": {
+    "body": "format-dateTime($0, $1)",
+    "description": "format-dateTime($value xs:dateTime?, $picture xs:string)\n\nReturns a string containing an xs:dateTime value formatted for display.",
+    "prefix": "format-dateTime"
+  },
+  "fn:format-dateTime#5": {
+    "body": "format-dateTime($0, $1, $2, $3, $4)",
+    "description": "format-dateTime($value xs:dateTime?, $picture xs:string, $language xs:string?, $calendar xs:string?, $place xs:string?)\n\nReturns a string containing an xs:dateTime value formatted for display.",
+    "prefix": "format-dateTime"
+  },
+  "fn:format-integer#2": {
+    "body": "format-integer($0, $1)",
+    "description": "format-integer($value xs:integer?, $picture xs:string)\n\nFormats an integer according to a given picture string, using the conventions of a given natural language if specified.",
+    "prefix": "format-integer"
+  },
+  "fn:format-integer#3": {
+    "body": "format-integer($0, $1, $2)",
+    "description": "format-integer($value xs:integer?, $picture xs:string, $lang xs:string?)\n\nFormats an integer according to a given picture string, using the conventions of a given natural language if specified.",
+    "prefix": "format-integer"
+  },
+  "fn:format-number#2": {
+    "body": "format-number($0, $1)",
+    "description": "format-number($value xs:numeric?, $picture xs:string)\n\nReturns a string containing a number formatted according to a given picture string, taking account of decimal formats specified in the static context.",
+    "prefix": "format-number"
+  },
+  "fn:format-number#3": {
+    "body": "format-number($0, $1, $2)",
+    "description": "format-number($value xs:numeric?, $picture xs:string, $decimal-format-name xs:string?)\n\nReturns a string containing a number formatted according to a given picture string, taking account of decimal formats specified in the static context.",
+    "prefix": "format-number"
+  },
+  "fn:format-time#2": {
+    "body": "format-time($0, $1)",
+    "description": "format-time($value xs:time?, $picture xs:string)\n\nReturns a string containing an xs:time value formatted for display.",
+    "prefix": "format-time"
+  },
+  "fn:format-time#5": {
+    "body": "format-time($0, $1, $2, $3, $4)",
+    "description": "format-time($value xs:time?, $picture xs:string, $language xs:string?, $calendar xs:string?, $place xs:string?)\n\nReturns a string containing an xs:time value formatted for display.",
+    "prefix": "format-time"
+  },
+  "fn:function-arity#1": {
+    "body": "function-arity($0)",
+    "description": "function-arity($func function(*))\n\nReturns the arity of the function identified by a function item.",
+    "prefix": "function-arity"
+  },
+  "fn:function-lookup#2": {
+    "body": "function-lookup($0, $1)",
+    "description": "function-lookup($name xs:QName, $arity xs:integer)\n\nReturns the function having a given name and arity, if there is one.",
+    "prefix": "function-lookup"
+  },
+  "fn:function-name#1": {
+    "body": "function-name($0)",
+    "description": "function-name($func function(*))\n\nReturns the name of the function identified by a function item.",
+    "prefix": "function-name"
+  },
+  "fn:generate-id#0": {
+    "body": "generate-id()",
+    "description": "generate-id()\n\nThis function returns a string that uniquely identifies a given node.",
+    "prefix": "generate-id"
+  },
+  "fn:generate-id#1": {
+    "body": "generate-id($0)",
+    "description": "generate-id($arg node()?)\n\nThis function returns a string that uniquely identifies a given node.",
+    "prefix": "generate-id"
+  },
+  "fn:has-children#0": {
+    "body": "has-children()",
+    "description": "has-children()\n\nReturns true if the supplied node has one or more child nodes (of any kind).",
+    "prefix": "has-children"
+  },
+  "fn:has-children#1": {
+    "body": "has-children($0)",
+    "description": "has-children($node node()?)\n\nReturns true if the supplied node has one or more child nodes (of any kind).",
+    "prefix": "has-children"
+  },
+  "fn:head#1": {
+    "body": "head($0)",
+    "description": "head($arg item()*)\n\nReturns the first item in a sequence.",
+    "prefix": "head"
+  },
+  "fn:hours-from-dateTime#1": {
+    "body": "hours-from-dateTime($0)",
+    "description": "hours-from-dateTime($arg xs:dateTime?)\n\nReturns the hours component of an xs:dateTime.",
+    "prefix": "hours-from-dateTime"
+  },
+  "fn:hours-from-duration#1": {
+    "body": "hours-from-duration($0)",
+    "description": "hours-from-duration($arg xs:duration?)\n\nReturns the number of hours in a duration.",
+    "prefix": "hours-from-duration"
+  },
+  "fn:hours-from-time#1": {
+    "body": "hours-from-time($0)",
+    "description": "hours-from-time($arg xs:time?)\n\nReturns the hours component of an xs:time.",
+    "prefix": "hours-from-time"
+  },
+  "fn:id#1": {
+    "body": "id($0)",
+    "description": "id($arg xs:string*)\n\nReturns the sequence of element nodes that have an ID value matching the value of one or more of the IDREF values supplied in $arg.",
+    "prefix": "id"
+  },
+  "fn:id#2": {
+    "body": "id($0, $1)",
+    "description": "id($arg xs:string*, $node node())\n\nReturns the sequence of element nodes that have an ID value matching the value of one or more of the IDREF values supplied in $arg.",
+    "prefix": "id"
+  },
+  "fn:idref#1": {
+    "body": "idref($0)",
+    "description": "idref($arg xs:string*)\n\nReturns the sequence of element or attribute nodes with an IDREF value matching the value of one or more of the ID values supplied in $arg.",
+    "prefix": "idref"
+  },
+  "fn:idref#2": {
+    "body": "idref($0, $1)",
+    "description": "idref($arg xs:string*, $node node())\n\nReturns the sequence of element or attribute nodes with an IDREF value matching the value of one or more of the ID values supplied in $arg.",
+    "prefix": "idref"
+  },
+  "fn:implicit-timezone#0": {
+    "body": "implicit-timezone()",
+    "description": "implicit-timezone()\n\nReturns the value of the implicit timezone property from the dynamic context.",
+    "prefix": "implicit-timezone"
+  },
+  "fn:in-scope-prefixes#1": {
+    "body": "in-scope-prefixes($0)",
+    "description": "in-scope-prefixes($element element())\n\nReturns the prefixes of the in-scope namespaces for an element node.",
+    "prefix": "in-scope-prefixes"
+  },
+  "fn:index-of#2": {
+    "body": "index-of($0, $1)",
+    "description": "index-of($seq xs:anyAtomicType*, $search xs:anyAtomicType)\n\nReturns a sequence of positive integers giving the positions within the sequence $seq of items that are equal to $search.",
+    "prefix": "index-of"
+  },
+  "fn:index-of#3": {
+    "body": "index-of($0, $1, $2)",
+    "description": "index-of($seq xs:anyAtomicType*, $search xs:anyAtomicType, $collation xs:string)\n\nReturns a sequence of positive integers giving the positions within the sequence $seq of items that are equal to $search.",
+    "prefix": "index-of"
+  },
+  "fn:innermost#1": {
+    "body": "innermost($0)",
+    "description": "innermost($nodes node()*)\n\nReturns every node within the input sequence that is not an ancestor of another member of the input sequence; the nodes are returned in document order with duplicates eliminated.",
+    "prefix": "innermost"
+  },
+  "fn:insert-before#3": {
+    "body": "insert-before($0, $1, $2)",
+    "description": "insert-before($target item()*, $position xs:integer, $inserts item()*)\n\nReturns a sequence constructed by inserting an item or a sequence of items at a given position within an existing sequence.",
+    "prefix": "insert-before"
+  },
+  "fn:iri-to-uri#1": {
+    "body": "iri-to-uri($0)",
+    "description": "iri-to-uri($iri xs:string?)\n\nConverts a string containing an IRI into a URI according to the rules of .",
+    "prefix": "iri-to-uri"
+  },
+  "fn:json-doc#1": {
+    "body": "json-doc($0)",
+    "description": "json-doc($href xs:string?)\n\nReads an external resource containing JSON, and returns the result of parsing the resource as JSON.",
+    "prefix": "json-doc"
+  },
+  "fn:json-doc#2": {
+    "body": "json-doc($0, $1)",
+    "description": "json-doc($href xs:string?, $options map(*))\n\nReads an external resource containing JSON, and returns the result of parsing the resource as JSON.",
+    "prefix": "json-doc"
+  },
+  "fn:json-to-xml#1": {
+    "body": "json-to-xml($0)",
+    "description": "json-to-xml($json-text xs:string?)\n\nParses a string supplied in the form of a JSON text, returning the results in the form of an XML document node.",
+    "prefix": "json-to-xml"
+  },
+  "fn:json-to-xml#2": {
+    "body": "json-to-xml($0, $1)",
+    "description": "json-to-xml($json-text xs:string?, $options map(*))\n\nParses a string supplied in the form of a JSON text, returning the results in the form of an XML document node.",
+    "prefix": "json-to-xml"
+  },
+  "fn:lang#1": {
+    "body": "lang($0)",
+    "description": "lang($testlang xs:string?)\n\nThis function tests whether the language of $node, or the context item if the second argument is omitted, as specified by xml:lang attributes is the same as, or is a sublanguage of, the language specified by $testlang.",
+    "prefix": "lang"
+  },
+  "fn:lang#2": {
+    "body": "lang($0, $1)",
+    "description": "lang($testlang xs:string?, $node node())\n\nThis function tests whether the language of $node, or the context item if the second argument is omitted, as specified by xml:lang attributes is the same as, or is a sublanguage of, the language specified by $testlang.",
+    "prefix": "lang"
+  },
+  "fn:last#0": {
+    "body": "last()",
+    "description": "last()\n\nReturns the context size from the dynamic context.",
+    "prefix": "last"
+  },
+  "fn:load-xquery-module#1": {
+    "body": "load-xquery-module($0)",
+    "description": "load-xquery-module($module-uri xs:string)\n\nProvides access to the public functions and global variables of a dynamically-loaded XQuery library module.",
+    "prefix": "load-xquery-module"
+  },
+  "fn:load-xquery-module#2": {
+    "body": "load-xquery-module($0, $1)",
+    "description": "load-xquery-module($module-uri xs:string, $options map(*))\n\nProvides access to the public functions and global variables of a dynamically-loaded XQuery library module.",
+    "prefix": "load-xquery-module"
+  },
+  "fn:local-name#0": {
+    "body": "local-name()",
+    "description": "local-name()\n\nReturns the local part of the name of $arg as an xs:string that is either the zero-length string, or has the lexical form of an xs:NCName.",
+    "prefix": "local-name"
+  },
+  "fn:local-name#1": {
+    "body": "local-name($0)",
+    "description": "local-name($arg node()?)\n\nReturns the local part of the name of $arg as an xs:string that is either the zero-length string, or has the lexical form of an xs:NCName.",
+    "prefix": "local-name"
+  },
+  "fn:local-name-from-QName#1": {
+    "body": "local-name-from-QName($0)",
+    "description": "local-name-from-QName($arg xs:QName?)\n\nReturns the local part of the supplied QName.",
+    "prefix": "local-name-from-QName"
+  },
+  "fn:lower-case#1": {
+    "body": "lower-case($0)",
+    "description": "lower-case($arg xs:string?)\n\nConverts a string to lower case.",
+    "prefix": "lower-case"
+  },
+  "fn:matches#2": {
+    "body": "matches($0, $1)",
+    "description": "matches($input xs:string?, $pattern xs:string)\n\nReturns true if the supplied string matches a given regular expression.",
+    "prefix": "matches"
+  },
+  "fn:matches#3": {
+    "body": "matches($0, $1, $2)",
+    "description": "matches($input xs:string?, $pattern xs:string, $flags xs:string)\n\nReturns true if the supplied string matches a given regular expression.",
+    "prefix": "matches"
+  },
+  "fn:max#1": {
+    "body": "max($0)",
+    "description": "max($arg xs:anyAtomicType*)\n\nReturns a value that is equal to the highest value appearing in the input sequence.",
+    "prefix": "max"
+  },
+  "fn:max#2": {
+    "body": "max($0, $1)",
+    "description": "max($arg xs:anyAtomicType*, $collation xs:string)\n\nReturns a value that is equal to the highest value appearing in the input sequence.",
+    "prefix": "max"
+  },
+  "fn:min#1": {
+    "body": "min($0)",
+    "description": "min($arg xs:anyAtomicType*)\n\nReturns a value that is equal to the lowest value appearing in the input sequence.",
+    "prefix": "min"
+  },
+  "fn:min#2": {
+    "body": "min($0, $1)",
+    "description": "min($arg xs:anyAtomicType*, $collation xs:string)\n\nReturns a value that is equal to the lowest value appearing in the input sequence.",
+    "prefix": "min"
+  },
+  "fn:minutes-from-dateTime#1": {
+    "body": "minutes-from-dateTime($0)",
+    "description": "minutes-from-dateTime($arg xs:dateTime?)\n\nReturns the minute component of an xs:dateTime.",
+    "prefix": "minutes-from-dateTime"
+  },
+  "fn:minutes-from-duration#1": {
+    "body": "minutes-from-duration($0)",
+    "description": "minutes-from-duration($arg xs:duration?)\n\nReturns the number of minutes in a duration.",
+    "prefix": "minutes-from-duration"
   },
   "fn:minutes-from-time#1": {
     "body": "minutes-from-time($0)",
-    "prefix": "minutes-from-time",
-    "description": "minutes-from-time($arg xs:time?)\n\nReturns the minutes component of an xs:time."
+    "description": "minutes-from-time($arg xs:time?)\n\nReturns the minutes component of an xs:time.",
+    "prefix": "minutes-from-time"
+  },
+  "fn:month-from-date#1": {
+    "body": "month-from-date($0)",
+    "description": "month-from-date($arg xs:date?)\n\nReturns the month component of an xs:date.",
+    "prefix": "month-from-date"
+  },
+  "fn:month-from-dateTime#1": {
+    "body": "month-from-dateTime($0)",
+    "description": "month-from-dateTime($arg xs:dateTime?)\n\nReturns the month component of an xs:dateTime.",
+    "prefix": "month-from-dateTime"
+  },
+  "fn:months-from-duration#1": {
+    "body": "months-from-duration($0)",
+    "description": "months-from-duration($arg xs:duration?)\n\nReturns the number of months in a duration.",
+    "prefix": "months-from-duration"
+  },
+  "fn:name#0": {
+    "body": "name()",
+    "description": "name()\n\nReturns the name of a node, as an xs:string that is either the zero-length string, or has the lexical form of an xs:QName.",
+    "prefix": "name"
+  },
+  "fn:name#1": {
+    "body": "name($0)",
+    "description": "name($arg node()?)\n\nReturns the name of a node, as an xs:string that is either the zero-length string, or has the lexical form of an xs:QName.",
+    "prefix": "name"
+  },
+  "fn:namespace-uri#0": {
+    "body": "namespace-uri()",
+    "description": "namespace-uri()\n\nReturns the namespace URI part of the name of $arg, as an xs:anyURI value.",
+    "prefix": "namespace-uri"
+  },
+  "fn:namespace-uri#1": {
+    "body": "namespace-uri($0)",
+    "description": "namespace-uri($arg node()?)\n\nReturns the namespace URI part of the name of $arg, as an xs:anyURI value.",
+    "prefix": "namespace-uri"
+  },
+  "fn:namespace-uri-for-prefix#2": {
+    "body": "namespace-uri-for-prefix($0, $1)",
+    "description": "namespace-uri-for-prefix($prefix xs:string?, $element element())\n\nReturns the namespace URI of one of the in-scope namespaces for $element, identified by its namespace prefix.",
+    "prefix": "namespace-uri-for-prefix"
+  },
+  "fn:namespace-uri-from-QName#1": {
+    "body": "namespace-uri-from-QName($0)",
+    "description": "namespace-uri-from-QName($arg xs:QName?)\n\nReturns the namespace URI part of the supplied QName.",
+    "prefix": "namespace-uri-from-QName"
+  },
+  "fn:nilled#0": {
+    "body": "nilled()",
+    "description": "nilled()\n\nReturns true for an element that is nilled.",
+    "prefix": "nilled"
+  },
+  "fn:nilled#1": {
+    "body": "nilled($0)",
+    "description": "nilled($arg node()?)\n\nReturns true for an element that is nilled.",
+    "prefix": "nilled"
+  },
+  "fn:node-name#0": {
+    "body": "node-name()",
+    "description": "node-name()\n\nReturns the name of a node, as an xs:QName.",
+    "prefix": "node-name"
+  },
+  "fn:node-name#1": {
+    "body": "node-name($0)",
+    "description": "node-name($arg node()?)\n\nReturns the name of a node, as an xs:QName.",
+    "prefix": "node-name"
+  },
+  "fn:normalize-space#0": {
+    "body": "normalize-space()",
+    "description": "normalize-space()\n\nReturns the value of $arg with leading and trailing whitespace removed, and sequences of internal whitespace reduced to a single space character.",
+    "prefix": "normalize-space"
+  },
+  "fn:normalize-space#1": {
+    "body": "normalize-space($0)",
+    "description": "normalize-space($arg xs:string?)\n\nReturns the value of $arg with leading and trailing whitespace removed, and sequences of internal whitespace reduced to a single space character.",
+    "prefix": "normalize-space"
+  },
+  "fn:normalize-unicode#1": {
+    "body": "normalize-unicode($0)",
+    "description": "normalize-unicode($arg xs:string?)\n\nReturns the value of $arg after applying Unicode normalization.",
+    "prefix": "normalize-unicode"
+  },
+  "fn:normalize-unicode#2": {
+    "body": "normalize-unicode($0, $1)",
+    "description": "normalize-unicode($arg xs:string?, $normalizationForm xs:string)\n\nReturns the value of $arg after applying Unicode normalization.",
+    "prefix": "normalize-unicode"
+  },
+  "fn:not#1": {
+    "body": "not($0)",
+    "description": "not($arg item()*)\n\nReturns true if the effective boolean value of $arg is false, or false if it is true.",
+    "prefix": "not"
+  },
+  "fn:number#0": {
+    "body": "number()",
+    "description": "number()\n\nReturns the value indicated by $arg or, if $arg is not specified, the context item after atomization, converted to an xs:double.",
+    "prefix": "number"
+  },
+  "fn:number#1": {
+    "body": "number($0)",
+    "description": "number($arg xs:anyAtomicType?)\n\nReturns the value indicated by $arg or, if $arg is not specified, the context item after atomization, converted to an xs:double.",
+    "prefix": "number"
+  },
+  "fn:one-or-more#1": {
+    "body": "one-or-more($0)",
+    "description": "one-or-more($arg item()*)\n\nReturns $arg if it contains one or more items. Otherwise, raises an error.",
+    "prefix": "one-or-more"
+  },
+  "fn:outermost#1": {
+    "body": "outermost($0)",
+    "description": "outermost($nodes node()*)\n\nReturns every node within the input sequence that has no ancestor that is itself a member of the input sequence; the nodes are returned in document order with duplicates eliminated.",
+    "prefix": "outermost"
+  },
+  "fn:parse-ietf-date#1": {
+    "body": "parse-ietf-date($0)",
+    "description": "parse-ietf-date($value xs:string?)\n\nParses a string containing the date and time in IETF format, returning the corresponding xs:dateTime value.",
+    "prefix": "parse-ietf-date"
+  },
+  "fn:parse-json#1": {
+    "body": "parse-json($0)",
+    "description": "parse-json($json-text xs:string?)\n\nParses a string supplied in the form of a JSON text, returning the results typically in the form of a map or array.",
+    "prefix": "parse-json"
+  },
+  "fn:parse-json#2": {
+    "body": "parse-json($0, $1)",
+    "description": "parse-json($json-text xs:string?, $options map(*))\n\nParses a string supplied in the form of a JSON text, returning the results typically in the form of a map or array.",
+    "prefix": "parse-json"
+  },
+  "fn:parse-xml#1": {
+    "body": "parse-xml($0)",
+    "description": "parse-xml($arg xs:string?)\n\nThis function takes as input an XML document represented as a string, and returns the document node at the root of an XDM tree representing the parsed document.",
+    "prefix": "parse-xml"
+  },
+  "fn:parse-xml-fragment#1": {
+    "body": "parse-xml-fragment($0)",
+    "description": "parse-xml-fragment($arg xs:string?)\n\nThis function takes as input an XML external entity represented as a string, and returns the document node at the root of an XDM tree representing the parsed document fragment.",
+    "prefix": "parse-xml-fragment"
+  },
+  "fn:path#0": {
+    "body": "path()",
+    "description": "path()\n\nReturns a path expression that can be used to select the supplied node relative to the root of its containing document.",
+    "prefix": "path"
+  },
+  "fn:path#1": {
+    "body": "path($0)",
+    "description": "path($arg node()?)\n\nReturns a path expression that can be used to select the supplied node relative to the root of its containing document.",
+    "prefix": "path"
+  },
+  "fn:position#0": {
+    "body": "position()",
+    "description": "position()\n\nReturns the context position from the dynamic context.",
+    "prefix": "position"
+  },
+  "fn:prefix-from-QName#1": {
+    "body": "prefix-from-QName($0)",
+    "description": "prefix-from-QName($arg xs:QName?)\n\nReturns the prefix component of the supplied QName.",
+    "prefix": "prefix-from-QName"
+  },
+  "fn:random-number-generator#0": {
+    "body": "random-number-generator()",
+    "description": "random-number-generator()\n\nReturns a random number generator, which can be used to generate sequences of random numbers.",
+    "prefix": "random-number-generator"
+  },
+  "fn:random-number-generator#1": {
+    "body": "random-number-generator($0)",
+    "description": "random-number-generator($seed xs:anyAtomicType?)\n\nReturns a random number generator, which can be used to generate sequences of random numbers.",
+    "prefix": "random-number-generator"
+  },
+  "fn:remove#2": {
+    "body": "remove($0, $1)",
+    "description": "remove($target item()*, $position xs:integer)\n\nReturns a new sequence containing all the items of $target except the item at position $position.",
+    "prefix": "remove"
+  },
+  "fn:replace#3": {
+    "body": "replace($0, $1, $2)",
+    "description": "replace($input xs:string?, $pattern xs:string, $replacement xs:string)\n\nReturns a string produced from the input string by replacing any substrings that match a given regular expression with a supplied replacement string.",
+    "prefix": "replace"
+  },
+  "fn:replace#4": {
+    "body": "replace($0, $1, $2, $3)",
+    "description": "replace($input xs:string?, $pattern xs:string, $replacement xs:string, $flags xs:string)\n\nReturns a string produced from the input string by replacing any substrings that match a given regular expression with a supplied replacement string.",
+    "prefix": "replace"
+  },
+  "fn:resolve-QName#2": {
+    "body": "resolve-QName($0, $1)",
+    "description": "resolve-QName($qname xs:string?, $element element())\n\nReturns an xs:QName value (that is, an expanded-QName) by taking an xs:string that has the lexical form of an xs:QName (a string in the form \"prefix:local-name\" or \"local-name\") and resolving it using the in-scope namespaces for a given element.",
+    "prefix": "resolve-QName"
+  },
+  "fn:resolve-uri#1": {
+    "body": "resolve-uri($0)",
+    "description": "resolve-uri($relative xs:string?)\n\nResolves a relative IRI reference against an absolute IRI.",
+    "prefix": "resolve-uri"
+  },
+  "fn:resolve-uri#2": {
+    "body": "resolve-uri($0, $1)",
+    "description": "resolve-uri($relative xs:string?, $base xs:string)\n\nResolves a relative IRI reference against an absolute IRI.",
+    "prefix": "resolve-uri"
   },
   "fn:reverse#1": {
     "body": "reverse($0)",
-    "prefix": "reverse",
-    "description": "reverse($arg item()*)\n\nReverses the order of items in a sequence."
+    "description": "reverse($arg item()*)\n\nReverses the order of items in a sequence.",
+    "prefix": "reverse"
   },
-  "fn:uri-collection#0": {
-    "body": "uri-collection()",
-    "prefix": "uri-collection",
-    "description": "uri-collection()\n\nReturns a sequence of xs:anyURI values representing the URIs in a URI collection."
+  "fn:root#0": {
+    "body": "root()",
+    "description": "root()\n\nReturns the root of the tree to which $arg belongs. This will usually, but not necessarily, be a document node.",
+    "prefix": "root"
   },
-  "fn:unparsed-text-lines#1": {
-    "body": "unparsed-text-lines($0)",
-    "prefix": "unparsed-text-lines",
-    "description": "unparsed-text-lines($href xs:string?)\n\nThe fn:unparsed-text-lines function reads an external resource (for example, a file) and returns its contents as a sequence of strings, one for each line of text in the string representation of the resource."
+  "fn:root#1": {
+    "body": "root($0)",
+    "description": "root($arg node()?)\n\nReturns the root of the tree to which $arg belongs. This will usually, but not necessarily, be a document node.",
+    "prefix": "root"
   },
-  "fn:subsequence#2": {
-    "body": "subsequence($0, $1)",
-    "prefix": "subsequence",
-    "description": "subsequence($sourceSeq item()*, $startingLoc xs:double)\n\nReturns the contiguous sequence of items in the value of $sourceSeq beginning at the position indicated by the value of $startingLoc and continuing for the number of items indicated by the value of $length."
+  "fn:round#1": {
+    "body": "round($0)",
+    "description": "round($arg xs:numeric?)\n\nRounds a value to a specified number of decimal places, rounding upwards if two such values are equally near.",
+    "prefix": "round"
+  },
+  "fn:round#2": {
+    "body": "round($0, $1)",
+    "description": "round($arg xs:numeric?, $precision xs:integer)\n\nRounds a value to a specified number of decimal places, rounding upwards if two such values are equally near.",
+    "prefix": "round"
+  },
+  "fn:round-half-to-even#1": {
+    "body": "round-half-to-even($0)",
+    "description": "round-half-to-even($arg xs:numeric?)\n\nRounds a value to a specified number of decimal places, rounding to make the last digit even if two such values are equally near.",
+    "prefix": "round-half-to-even"
+  },
+  "fn:round-half-to-even#2": {
+    "body": "round-half-to-even($0, $1)",
+    "description": "round-half-to-even($arg xs:numeric?, $precision xs:integer)\n\nRounds a value to a specified number of decimal places, rounding to make the last digit even if two such values are equally near.",
+    "prefix": "round-half-to-even"
+  },
+  "fn:seconds-from-dateTime#1": {
+    "body": "seconds-from-dateTime($0)",
+    "description": "seconds-from-dateTime($arg xs:dateTime?)\n\nReturns the seconds component of an xs:dateTime.",
+    "prefix": "seconds-from-dateTime"
+  },
+  "fn:seconds-from-duration#1": {
+    "body": "seconds-from-duration($0)",
+    "description": "seconds-from-duration($arg xs:duration?)\n\nReturns the number of seconds in a duration.",
+    "prefix": "seconds-from-duration"
   },
   "fn:seconds-from-time#1": {
     "body": "seconds-from-time($0)",
-    "prefix": "seconds-from-time",
-    "description": "seconds-from-time($arg xs:time?)\n\nReturns the seconds component of an xs:time."
+    "description": "seconds-from-time($arg xs:time?)\n\nReturns the seconds component of an xs:time.",
+    "prefix": "seconds-from-time"
   },
-  "fn:starts-with#2": {
-    "body": "starts-with($0, $1)",
-    "prefix": "starts-with",
-    "description": "starts-with($arg1 xs:string?, $arg2 xs:string?)\n\nReturns true if the string $arg1 contains $arg2 as a leading substring, taking collations into account."
+  "fn:serialize#1": {
+    "body": "serialize($0)",
+    "description": "serialize($arg item()*)\n\nThis function serializes the supplied input sequence $arg as described in , returning the serialized representation of the sequence as a string.",
+    "prefix": "serialize"
+  },
+  "fn:serialize#2": {
+    "body": "serialize($0, $1)",
+    "description": "serialize($arg item()*, $params item()?)\n\nThis function serializes the supplied input sequence $arg as described in , returning the serialized representation of the sequence as a string.",
+    "prefix": "serialize"
+  },
+  "fn:sort#1": {
+    "body": "sort($0)",
+    "description": "sort($input item()*)\n\nSorts a supplied sequence, based on the value of a sort key supplied as a function.",
+    "prefix": "sort"
   },
   "fn:sort#2": {
     "body": "sort($0, $1)",
-    "prefix": "sort",
-    "description": "sort($input item()*, $collation xs:string?)\n\nSorts a supplied sequence, based on the value of a sort key supplied as a function."
+    "description": "sort($input item()*, $collation xs:string?)\n\nSorts a supplied sequence, based on the value of a sort key supplied as a function.",
+    "prefix": "sort"
   },
-  "fn:uri-collection#1": {
-    "body": "uri-collection($0)",
-    "prefix": "uri-collection",
-    "description": "uri-collection($arg xs:string?)\n\nReturns a sequence of xs:anyURI values representing the URIs in a URI collection."
+  "fn:sort#3": {
+    "body": "sort($0, $1, $2)",
+    "description": "sort($input item()*, $collation xs:string?, $key function(item()) as xs:anyAtomicType*)\n\nSorts a supplied sequence, based on the value of a sort key supplied as a function.",
+    "prefix": "sort"
   },
-  "fn:unparsed-text-lines#2": {
-    "body": "unparsed-text-lines($0, $1)",
-    "prefix": "unparsed-text-lines",
-    "description": "unparsed-text-lines($href xs:string?, $encoding xs:string)\n\nThe fn:unparsed-text-lines function reads an external resource (for example, a file) and returns its contents as a sequence of strings, one for each line of text in the string representation of the resource."
+  "fn:starts-with#2": {
+    "body": "starts-with($0, $1)",
+    "description": "starts-with($arg1 xs:string?, $arg2 xs:string?)\n\nReturns true if the string $arg1 contains $arg2 as a leading substring, taking collations into account.",
+    "prefix": "starts-with"
+  },
+  "fn:starts-with#3": {
+    "body": "starts-with($0, $1, $2)",
+    "description": "starts-with($arg1 xs:string?, $arg2 xs:string?, $collation xs:string)\n\nReturns true if the string $arg1 contains $arg2 as a leading substring, taking collations into account.",
+    "prefix": "starts-with"
+  },
+  "fn:static-base-uri#0": {
+    "body": "static-base-uri()",
+    "description": "static-base-uri()\n\nThis function returns the value of the static base URI property from the static context.",
+    "prefix": "static-base-uri"
+  },
+  "fn:string#0": {
+    "body": "string()",
+    "description": "string()\n\nReturns the value of $arg represented as an xs:string.",
+    "prefix": "string"
+  },
+  "fn:string#1": {
+    "body": "string($0)",
+    "description": "string($arg item()?)\n\nReturns the value of $arg represented as an xs:string.",
+    "prefix": "string"
+  },
+  "fn:string-join#1": {
+    "body": "string-join($0)",
+    "description": "string-join($arg1 xs:anyAtomicType*)\n\nReturns a string created by concatenating the items in a sequence, with a defined separator between adjacent items.",
+    "prefix": "string-join"
+  },
+  "fn:string-join#2": {
+    "body": "string-join($0, $1)",
+    "description": "string-join($arg1 xs:anyAtomicType*, $arg2 xs:string)\n\nReturns a string created by concatenating the items in a sequence, with a defined separator between adjacent items.",
+    "prefix": "string-join"
+  },
+  "fn:string-length#0": {
+    "body": "string-length()",
+    "description": "string-length()\n\nReturns the number of characters in a string.",
+    "prefix": "string-length"
+  },
+  "fn:string-length#1": {
+    "body": "string-length($0)",
+    "description": "string-length($arg xs:string?)\n\nReturns the number of characters in a string.",
+    "prefix": "string-length"
+  },
+  "fn:string-to-codepoints#1": {
+    "body": "string-to-codepoints($0)",
+    "description": "string-to-codepoints($arg xs:string?)\n\nReturns the sequence of codepoints that constitute an xs:string value.",
+    "prefix": "string-to-codepoints"
+  },
+  "fn:subsequence#2": {
+    "body": "subsequence($0, $1)",
+    "description": "subsequence($sourceSeq item()*, $startingLoc xs:double)\n\nReturns the contiguous sequence of items in the value of $sourceSeq beginning at the position indicated by the value of $startingLoc and continuing for the number of items indicated by the value of $length.",
+    "prefix": "subsequence"
   },
   "fn:subsequence#3": {
     "body": "subsequence($0, $1, $2)",
-    "prefix": "subsequence",
-    "description": "subsequence($sourceSeq item()*, $startingLoc xs:double, $length xs:double)\n\nReturns the contiguous sequence of items in the value of $sourceSeq beginning at the position indicated by the value of $startingLoc and continuing for the number of items indicated by the value of $length."
+    "description": "subsequence($sourceSeq item()*, $startingLoc xs:double, $length xs:double)\n\nReturns the contiguous sequence of items in the value of $sourceSeq beginning at the position indicated by the value of $startingLoc and continuing for the number of items indicated by the value of $length.",
+    "prefix": "subsequence"
+  },
+  "fn:substring#2": {
+    "body": "substring($0, $1)",
+    "description": "substring($sourceString xs:string?, $start xs:double)\n\nReturns the portion of the value of $sourceString beginning at the position indicated by the value of $start and continuing for the number of characters indicated by the value of $length.",
+    "prefix": "substring"
+  },
+  "fn:substring#3": {
+    "body": "substring($0, $1, $2)",
+    "description": "substring($sourceString xs:string?, $start xs:double, $length xs:double)\n\nReturns the portion of the value of $sourceString beginning at the position indicated by the value of $start and continuing for the number of characters indicated by the value of $length.",
+    "prefix": "substring"
+  },
+  "fn:substring-after#2": {
+    "body": "substring-after($0, $1)",
+    "description": "substring-after($arg1 xs:string?, $arg2 xs:string?)\n\nReturns the part of $arg1 that follows the first occurrence of $arg2, taking collations into account.",
+    "prefix": "substring-after"
+  },
+  "fn:substring-after#3": {
+    "body": "substring-after($0, $1, $2)",
+    "description": "substring-after($arg1 xs:string?, $arg2 xs:string?, $collation xs:string)\n\nReturns the part of $arg1 that follows the first occurrence of $arg2, taking collations into account.",
+    "prefix": "substring-after"
+  },
+  "fn:substring-before#2": {
+    "body": "substring-before($0, $1)",
+    "description": "substring-before($arg1 xs:string?, $arg2 xs:string?)\n\nReturns the part of $arg1 that precedes the first occurrence of $arg2, taking collations into account.",
+    "prefix": "substring-before"
+  },
+  "fn:substring-before#3": {
+    "body": "substring-before($0, $1, $2)",
+    "description": "substring-before($arg1 xs:string?, $arg2 xs:string?, $collation xs:string)\n\nReturns the part of $arg1 that precedes the first occurrence of $arg2, taking collations into account.",
+    "prefix": "substring-before"
+  },
+  "fn:sum#1": {
+    "body": "sum($0)",
+    "description": "sum($arg xs:anyAtomicType*)\n\nReturns a value obtained by adding together the values in $arg.",
+    "prefix": "sum"
+  },
+  "fn:sum#2": {
+    "body": "sum($0, $1)",
+    "description": "sum($arg xs:anyAtomicType*, $zero xs:anyAtomicType?)\n\nReturns a value obtained by adding together the values in $arg.",
+    "prefix": "sum"
+  },
+  "fn:tail#1": {
+    "body": "tail($0)",
+    "description": "tail($arg item()*)\n\nReturns all but the first item in a sequence.",
+    "prefix": "tail"
+  },
+  "fn:timezone-from-date#1": {
+    "body": "timezone-from-date($0)",
+    "description": "timezone-from-date($arg xs:date?)\n\nReturns the timezone component of an xs:date.",
+    "prefix": "timezone-from-date"
+  },
+  "fn:timezone-from-dateTime#1": {
+    "body": "timezone-from-dateTime($0)",
+    "description": "timezone-from-dateTime($arg xs:dateTime?)\n\nReturns the timezone component of an xs:dateTime.",
+    "prefix": "timezone-from-dateTime"
+  },
+  "fn:timezone-from-time#1": {
+    "body": "timezone-from-time($0)",
+    "description": "timezone-from-time($arg xs:time?)\n\nReturns the timezone component of an xs:time.",
+    "prefix": "timezone-from-time"
+  },
+  "fn:tokenize#1": {
+    "body": "tokenize($0)",
+    "description": "tokenize($input xs:string?)\n\nReturns a sequence of strings constructed by splitting the input wherever a separator is found; the separator is any substring that matches a given regular expression.",
+    "prefix": "tokenize"
+  },
+  "fn:tokenize#2": {
+    "body": "tokenize($0, $1)",
+    "description": "tokenize($input xs:string?, $pattern xs:string)\n\nReturns a sequence of strings constructed by splitting the input wherever a separator is found; the separator is any substring that matches a given regular expression.",
+    "prefix": "tokenize"
+  },
+  "fn:tokenize#3": {
+    "body": "tokenize($0, $1, $2)",
+    "description": "tokenize($input xs:string?, $pattern xs:string, $flags xs:string)\n\nReturns a sequence of strings constructed by splitting the input wherever a separator is found; the separator is any substring that matches a given regular expression.",
+    "prefix": "tokenize"
+  },
+  "fn:trace#1": {
+    "body": "trace($0)",
+    "description": "trace($value item()*)\n\nProvides an execution trace intended to be used in debugging queries.",
+    "prefix": "trace"
+  },
+  "fn:trace#2": {
+    "body": "trace($0, $1)",
+    "description": "trace($value item()*, $label xs:string)\n\nProvides an execution trace intended to be used in debugging queries.",
+    "prefix": "trace"
+  },
+  "fn:transform#1": {
+    "body": "transform($0)",
+    "description": "transform($options map(*))\n\nInvokes a transformation using a dynamically-loaded XSLT stylesheet.",
+    "prefix": "transform"
+  },
+  "fn:translate#3": {
+    "body": "translate($0, $1, $2)",
+    "description": "translate($arg xs:string?, $mapString xs:string, $transString xs:string)\n\nReturns the value of $arg modified by replacing or removing individual characters.",
+    "prefix": "translate"
+  },
+  "fn:true#0": {
+    "body": "true()",
+    "description": "true()\n\nReturns the xs:boolean value true.",
+    "prefix": "true"
+  },
+  "fn:unordered#1": {
+    "body": "unordered($0)",
+    "description": "unordered($sourceSeq item()*)\n\nReturns the items of $sourceSeq in an implementation-dependent order.",
+    "prefix": "unordered"
+  },
+  "fn:unparsed-text#1": {
+    "body": "unparsed-text($0)",
+    "description": "unparsed-text($href xs:string?)\n\nThe fn:unparsed-text function reads an external resource (for example, a file) and returns a string representation of the resource.",
+    "prefix": "unparsed-text"
+  },
+  "fn:unparsed-text#2": {
+    "body": "unparsed-text($0, $1)",
+    "description": "unparsed-text($href xs:string?, $encoding xs:string)\n\nThe fn:unparsed-text function reads an external resource (for example, a file) and returns a string representation of the resource.",
+    "prefix": "unparsed-text"
+  },
+  "fn:unparsed-text-available#1": {
+    "body": "unparsed-text-available($0)",
+    "description": "unparsed-text-available($href xs:string?)\n\nBecause errors in evaluating the fn:unparsed-text function are non-recoverable, these two functions are provided to allow an application to determine whether a call with particular arguments would succeed.",
+    "prefix": "unparsed-text-available"
+  },
+  "fn:unparsed-text-available#2": {
+    "body": "unparsed-text-available($0, $1)",
+    "description": "unparsed-text-available($href xs:string?, $encoding xs:string)\n\nBecause errors in evaluating the fn:unparsed-text function are non-recoverable, these two functions are provided to allow an application to determine whether a call with particular arguments would succeed.",
+    "prefix": "unparsed-text-available"
+  },
+  "fn:unparsed-text-lines#1": {
+    "body": "unparsed-text-lines($0)",
+    "description": "unparsed-text-lines($href xs:string?)\n\nThe fn:unparsed-text-lines function reads an external resource (for example, a file) and returns its contents as a sequence of strings, one for each line of text in the string representation of the resource.",
+    "prefix": "unparsed-text-lines"
+  },
+  "fn:unparsed-text-lines#2": {
+    "body": "unparsed-text-lines($0, $1)",
+    "description": "unparsed-text-lines($href xs:string?, $encoding xs:string)\n\nThe fn:unparsed-text-lines function reads an external resource (for example, a file) and returns its contents as a sequence of strings, one for each line of text in the string representation of the resource.",
+    "prefix": "unparsed-text-lines"
+  },
+  "fn:upper-case#1": {
+    "body": "upper-case($0)",
+    "description": "upper-case($arg xs:string?)\n\nConverts a string to upper case.",
+    "prefix": "upper-case"
+  },
+  "fn:uri-collection#0": {
+    "body": "uri-collection()",
+    "description": "uri-collection()\n\nReturns a sequence of xs:anyURI values representing the URIs in a URI collection.",
+    "prefix": "uri-collection"
+  },
+  "fn:uri-collection#1": {
+    "body": "uri-collection($0)",
+    "description": "uri-collection($arg xs:string?)\n\nReturns a sequence of xs:anyURI values representing the URIs in a URI collection.",
+    "prefix": "uri-collection"
+  },
+  "fn:xml-to-json#1": {
+    "body": "xml-to-json($0)",
+    "description": "xml-to-json($input node()?)\n\nConverts an XML tree, whose format corresponds to the XML representation of JSON defined in this specification, into a string conforming to the JSON grammar.",
+    "prefix": "xml-to-json"
+  },
+  "fn:xml-to-json#2": {
+    "body": "xml-to-json($0, $1)",
+    "description": "xml-to-json($input node()?, $options map(*))\n\nConverts an XML tree, whose format corresponds to the XML representation of JSON defined in this specification, into a string conforming to the JSON grammar.",
+    "prefix": "xml-to-json"
+  },
+  "fn:year-from-date#1": {
+    "body": "year-from-date($0)",
+    "description": "year-from-date($arg xs:date?)\n\nReturns the year component of an xs:date.",
+    "prefix": "year-from-date"
+  },
+  "fn:year-from-dateTime#1": {
+    "body": "year-from-dateTime($0)",
+    "description": "year-from-dateTime($arg xs:dateTime?)\n\nReturns the year component of an xs:dateTime.",
+    "prefix": "year-from-dateTime"
+  },
+  "fn:years-from-duration#1": {
+    "body": "years-from-duration($0)",
+    "description": "years-from-duration($arg xs:duration?)\n\nReturns the number of years in a duration.",
+    "prefix": "years-from-duration"
+  },
+  "fn:zero-or-one#1": {
+    "body": "zero-or-one($0)",
+    "description": "zero-or-one($arg item()*)\n\nReturns $arg if it contains zero or one items. Otherwise, raises an error.",
+    "prefix": "zero-or-one"
   }
 }

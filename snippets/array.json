@@ -1,107 +1,107 @@
 {
-  "array:fold-right#3": {
-    "body": "array:fold-right($0, $1, $2)",
-    "prefix": "array:fold-right",
-    "description": "array:fold-right($array array(*), $zero item()*, $function function(item()*, item()*) as item()*)\n\nEvaluates the supplied function cumulatively on successive values of the supplied array."
-  },
-  "array:insert-before#3": {
-    "body": "array:insert-before($0, $1, $2)",
-    "prefix": "array:insert-before",
-    "description": "array:insert-before($array array(*), $position xs:integer, $member item()*)\n\nReturns an array containing all the members of the supplied array, with one additional member at a specified position."
-  },
-  "array:fold-left#3": {
-    "body": "array:fold-left($0, $1, $2)",
-    "prefix": "array:fold-left",
-    "description": "array:fold-left($array array(*), $zero item()*, $function function(item()*, item()*) as item()*)\n\nEvaluates the supplied function cumulatively on successive members of the supplied array."
-  },
-  "array:get#2": {
-    "body": "array:get($0, $1)",
-    "prefix": "array:get",
-    "description": "array:get($array array(*), $position xs:integer)\n\nReturns the value at the specified position in the supplied array (counting from 1)."
+  "array:append#2": {
+    "body": "array:append($0, $1)",
+    "description": "array:append($array array(*), $appendage item()*)\n\nReturns an array containing all the members of a supplied array, plus one additional member at the end.",
+    "prefix": "array:append"
   },
   "array:filter#2": {
     "body": "array:filter($0, $1)",
-    "prefix": "array:filter",
-    "description": "array:filter($array array(*), $function function(item()*) as xs:boolean)\n\nReturns an array containing those members of the $array for which $function returns true."
-  },
-  "array:subarray#2": {
-    "body": "array:subarray($0, $1)",
-    "prefix": "array:subarray",
-    "description": "array:subarray($array array(*), $start xs:integer)\n\nReturns an array containing all members from a supplied array starting at a supplied position, up to a specified length."
-  },
-  "array:append#2": {
-    "body": "array:append($0, $1)",
-    "prefix": "array:append",
-    "description": "array:append($array array(*), $appendage item()*)\n\nReturns an array containing all the members of a supplied array, plus one additional member at the end."
-  },
-  "array:subarray#3": {
-    "body": "array:subarray($0, $1, $2)",
-    "prefix": "array:subarray",
-    "description": "array:subarray($array array(*), $start xs:integer, $length xs:integer)\n\nReturns an array containing all members from a supplied array starting at a supplied position, up to a specified length."
-  },
-  "array:sort#1": {
-    "body": "array:sort($0)",
-    "prefix": "array:sort",
-    "description": "array:sort($array array(*))\n\nReturns an array containing all the members of the supplied array, sorted according to the value of a sort key supplied as a function."
-  },
-  "array:sort#2": {
-    "body": "array:sort($0, $1)",
-    "prefix": "array:sort",
-    "description": "array:sort($array array(*), $collation xs:string?)\n\nReturns an array containing all the members of the supplied array, sorted according to the value of a sort key supplied as a function."
-  },
-  "array:head#1": {
-    "body": "array:head($0)",
-    "prefix": "array:head",
-    "description": "array:head($array array(*))\n\nReturns the first member of an array, that is $array(1)."
-  },
-  "array:sort#3": {
-    "body": "array:sort($0, $1, $2)",
-    "prefix": "array:sort",
-    "description": "array:sort($array array(*), $collation xs:string?, $key function(item()*) as xs:anyAtomicType*)\n\nReturns an array containing all the members of the supplied array, sorted according to the value of a sort key supplied as a function."
-  },
-  "array:reverse#1": {
-    "body": "array:reverse($0)",
-    "prefix": "array:reverse",
-    "description": "array:reverse($array array(*))\n\nReturns an array containing all the members of a supplied array, but in reverse order."
-  },
-  "array:size#1": {
-    "body": "array:size($0)",
-    "prefix": "array:size",
-    "description": "array:size($array array(*))\n\nReturns the number of members in the supplied array."
+    "description": "array:filter($array array(*), $function function(item()*) as xs:boolean)\n\nReturns an array containing those members of the $array for which $function returns true.",
+    "prefix": "array:filter"
   },
   "array:flatten#1": {
     "body": "array:flatten($0)",
-    "prefix": "array:flatten",
-    "description": "array:flatten($input item()*)\n\nReplaces any array appearing in a supplied sequence with the members of the array, recursively."
+    "description": "array:flatten($input item()*)\n\nReplaces any array appearing in a supplied sequence with the members of the array, recursively.",
+    "prefix": "array:flatten"
   },
-  "array:for-each-pair#3": {
-    "body": "array:for-each-pair($0, $1, $2)",
-    "prefix": "array:for-each-pair",
-    "description": "array:for-each-pair($array1 array(*), $array2 array(*), $function function(item()*, item()*) as item()*)\n\nReturns an array obtained by evaluating the supplied function once for each pair of members at the same position in the two supplied arrays."
+  "array:fold-left#3": {
+    "body": "array:fold-left($0, $1, $2)",
+    "description": "array:fold-left($array array(*), $zero item()*, $function function(item()*, item()*) as item()*)\n\nEvaluates the supplied function cumulatively on successive members of the supplied array.",
+    "prefix": "array:fold-left"
   },
-  "array:remove#2": {
-    "body": "array:remove($0, $1)",
-    "prefix": "array:remove",
-    "description": "array:remove($array array(*), $positions xs:integer*)\n\nReturns an array containing all the members of the supplied array, except for the members at specified positions."
+  "array:fold-right#3": {
+    "body": "array:fold-right($0, $1, $2)",
+    "description": "array:fold-right($array array(*), $zero item()*, $function function(item()*, item()*) as item()*)\n\nEvaluates the supplied function cumulatively on successive values of the supplied array.",
+    "prefix": "array:fold-right"
   },
   "array:for-each#2": {
     "body": "array:for-each($0, $1)",
-    "prefix": "array:for-each",
-    "description": "array:for-each($array array(*), $action function(item()*) as item()*)\n\nReturns an array whose size is the same as array:size($array), in which each member is computed by applying $function to the corresponding member of $array."
+    "description": "array:for-each($array array(*), $action function(item()*) as item()*)\n\nReturns an array whose size is the same as array:size($array), in which each member is computed by applying $function to the corresponding member of $array.",
+    "prefix": "array:for-each"
+  },
+  "array:for-each-pair#3": {
+    "body": "array:for-each-pair($0, $1, $2)",
+    "description": "array:for-each-pair($array1 array(*), $array2 array(*), $function function(item()*, item()*) as item()*)\n\nReturns an array obtained by evaluating the supplied function once for each pair of members at the same position in the two supplied arrays.",
+    "prefix": "array:for-each-pair"
+  },
+  "array:get#2": {
+    "body": "array:get($0, $1)",
+    "description": "array:get($array array(*), $position xs:integer)\n\nReturns the value at the specified position in the supplied array (counting from 1).",
+    "prefix": "array:get"
+  },
+  "array:head#1": {
+    "body": "array:head($0)",
+    "description": "array:head($array array(*))\n\nReturns the first member of an array, that is $array(1).",
+    "prefix": "array:head"
+  },
+  "array:insert-before#3": {
+    "body": "array:insert-before($0, $1, $2)",
+    "description": "array:insert-before($array array(*), $position xs:integer, $member item()*)\n\nReturns an array containing all the members of the supplied array, with one additional member at a specified position.",
+    "prefix": "array:insert-before"
   },
   "array:join#1": {
     "body": "array:join($0)",
-    "prefix": "array:join",
-    "description": "array:join($arrays array(*)*)\n\nConcatenates the contents of several arrays into a single array."
+    "description": "array:join($arrays array(*)*)\n\nConcatenates the contents of several arrays into a single array.",
+    "prefix": "array:join"
   },
   "array:put#3": {
     "body": "array:put($0, $1, $2)",
-    "prefix": "array:put",
-    "description": "array:put($array array(*), $position xs:integer, $member item()*)\n\nReturns an array containing all the members of a supplied array, except for one member which is replaced with a new value."
+    "description": "array:put($array array(*), $position xs:integer, $member item()*)\n\nReturns an array containing all the members of a supplied array, except for one member which is replaced with a new value.",
+    "prefix": "array:put"
+  },
+  "array:remove#2": {
+    "body": "array:remove($0, $1)",
+    "description": "array:remove($array array(*), $positions xs:integer*)\n\nReturns an array containing all the members of the supplied array, except for the members at specified positions.",
+    "prefix": "array:remove"
+  },
+  "array:reverse#1": {
+    "body": "array:reverse($0)",
+    "description": "array:reverse($array array(*))\n\nReturns an array containing all the members of a supplied array, but in reverse order.",
+    "prefix": "array:reverse"
+  },
+  "array:size#1": {
+    "body": "array:size($0)",
+    "description": "array:size($array array(*))\n\nReturns the number of members in the supplied array.",
+    "prefix": "array:size"
+  },
+  "array:sort#1": {
+    "body": "array:sort($0)",
+    "description": "array:sort($array array(*))\n\nReturns an array containing all the members of the supplied array, sorted according to the value of a sort key supplied as a function.",
+    "prefix": "array:sort"
+  },
+  "array:sort#2": {
+    "body": "array:sort($0, $1)",
+    "description": "array:sort($array array(*), $collation xs:string?)\n\nReturns an array containing all the members of the supplied array, sorted according to the value of a sort key supplied as a function.",
+    "prefix": "array:sort"
+  },
+  "array:sort#3": {
+    "body": "array:sort($0, $1, $2)",
+    "description": "array:sort($array array(*), $collation xs:string?, $key function(item()*) as xs:anyAtomicType*)\n\nReturns an array containing all the members of the supplied array, sorted according to the value of a sort key supplied as a function.",
+    "prefix": "array:sort"
+  },
+  "array:subarray#2": {
+    "body": "array:subarray($0, $1)",
+    "description": "array:subarray($array array(*), $start xs:integer)\n\nReturns an array containing all members from a supplied array starting at a supplied position, up to a specified length.",
+    "prefix": "array:subarray"
+  },
+  "array:subarray#3": {
+    "body": "array:subarray($0, $1, $2)",
+    "description": "array:subarray($array array(*), $start xs:integer, $length xs:integer)\n\nReturns an array containing all members from a supplied array starting at a supplied position, up to a specified length.",
+    "prefix": "array:subarray"
   },
   "array:tail#1": {
     "body": "array:tail($0)",
-    "prefix": "array:tail",
-    "description": "array:tail($array array(*))\n\nReturns an array containing all members except the first from a supplied array."
+    "description": "array:tail($array array(*))\n\nReturns an array containing all members except the first from a supplied array.",
+    "prefix": "array:tail"
   }
 }
