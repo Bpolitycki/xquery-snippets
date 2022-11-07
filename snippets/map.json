@@ -1,0 +1,57 @@
+{
+  "map:keys#1": {
+    "body": "map:keys($0)",
+    "prefix": "map:keys",
+    "description": "map:keys($map map(*))\n\nReturns a sequence containing all the keys present in a map"
+  },
+  "map:put#3": {
+    "body": "map:put($0, $1, $2)",
+    "prefix": "map:put",
+    "description": "map:put($map map(*), $key xs:anyAtomicType, $value item()*)\n\nReturns a map containing all the contents of the supplied map, but with an additional entry, which replaces any existing entry for the same key."
+  },
+  "map:entry#2": {
+    "body": "map:entry($0, $1)",
+    "prefix": "map:entry",
+    "description": "map:entry($key xs:anyAtomicType, $value item()*)\n\nReturns a map that contains a single entry (a key-value pair)."
+  },
+  "map:find#2": {
+    "body": "map:find($0, $1)",
+    "prefix": "map:find",
+    "description": "map:find($input item()*, $key xs:anyAtomicType)\n\nSearches the supplied input sequence and any contained maps and arrays for a map entry with the supplied key, and returns the corresponding values."
+  },
+  "map:get#2": {
+    "body": "map:get($0, $1)",
+    "prefix": "map:get",
+    "description": "map:get($map map(*), $key xs:anyAtomicType)\n\nReturns the value associated with a supplied key in a given map."
+  },
+  "map:merge#1": {
+    "body": "map:merge($0)",
+    "prefix": "map:merge",
+    "description": "map:merge($maps map(*)*)\n\nReturns a map that combines the entries from a number of existing maps."
+  },
+  "map:merge#2": {
+    "body": "map:merge($0, $1)",
+    "prefix": "map:merge",
+    "description": "map:merge($maps map(*)*, $options map(*))\n\nReturns a map that combines the entries from a number of existing maps."
+  },
+  "map:contains#2": {
+    "body": "map:contains($0, $1)",
+    "prefix": "map:contains",
+    "description": "map:contains($map map(*), $key xs:anyAtomicType)\n\nTests whether a supplied map contains an entry for a given key"
+  },
+  "map:size#1": {
+    "body": "map:size($0)",
+    "prefix": "map:size",
+    "description": "map:size($map map(*))\n\nReturns the number of entries in the supplied map."
+  },
+  "map:remove#2": {
+    "body": "map:remove($0, $1)",
+    "prefix": "map:remove",
+    "description": "map:remove($map map(*), $keys xs:anyAtomicType*)\n\nReturns a map containing all the entries from a supplied map, except those having a specified key."
+  },
+  "map:for-each#2": {
+    "body": "map:for-each($0, $1)",
+    "prefix": "map:for-each",
+    "description": "map:for-each($map map(*), $action function(xs:anyAtomicType, item()*) as item()*)\n\nApplies a supplied function to every entry in a map, returning the concatenation of the results."
+  }
+}

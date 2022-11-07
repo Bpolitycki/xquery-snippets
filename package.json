@@ -1,0 +1,22 @@
+{
+  "name": "xquery-snippets",
+  "engines": {
+    "vscode": "^1.11.0"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": "xquery",
+        "path": "./snippets/array.json"
+      },
+      {
+        "language": "xquery",
+        "path": "./snippets/fn.json"
+      },
+      {
+        "language": "xquery",
+        "path": "./snippets/map.json"
+      }
+    ]
+  }
+}
