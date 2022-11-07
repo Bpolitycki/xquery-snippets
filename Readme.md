@@ -15,10 +15,10 @@ Plug 'bpolitycki/xquery-snippets'
 
 ## ToDo
 
-[ ] Add snippets for math
-[ ] Add snippets for eXist-db
-[ ] Add snippets for baseX
-[ ] Add snippets for functX
+- [ ] Add snippets for math
+- [ ] Add snippets for eXist-db
+- [ ] Add snippets for baseX
+- [ ] Add snippets for functX
 
 ## Credits
 
