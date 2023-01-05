@@ -1,8 +1,15 @@
 {
   "name": "xquery-snippets",
+  "displayName": "Snippets for XQuery",
+  "description": "A collection of XQuery utility snippets.",
+  "version": "0.0.1",
+  "publisher": "Bastian Politycki",
   "engines": {
-    "vscode": "^1.11.0"
+    "vscode": "^1.28.0"
   },
+  "categories": [
+    "Snippets"
+  ],
   "contributes": {
     "snippets": [
       {
